@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Constant Not Found">
+    <meta name="keywords" content="Constant Not Found">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.css">
+    <link href="/css/alerts/toastr.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <ul class="head-block-1">
+            <li>
+                <a href="/"><img src="/images/Logo-crona.png" width="254" height="60" alt=""></a>
+            </li>
+            <li>
+                <p>
+                    Оптовая торговля свежими овощами и фруктами, сервис и доставка.
+                </p>
+            </li>
+            <li>
+                <h1><span>+ 7 (812)</span> 456-52-56<br><span>+ 7 (812)</span> 393-31-88</h1>
+            </li>
+            <li class="last-column">
+                <ul class="lang">
+                    <li class="active-lang lang-item">
+                        <a href="#">
+                            <img src="/images/rus-logo.png" width="19" height="20" alt="">
+                        </a>
+                    </li>
+                    <li class="lang-item">
+                        <a href="#">
+                            <img src="/images/eng-logo.png" width="20" height="19" alt="">
+                        </a>
+                    </li>
+                    <li class="lang-item">
+                        <a href="#">
+                            <img src="/images/esp-logo.png" width="20" height="19" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <div class="left">
+                        <img src="/images/calendar-logo.png" width="27" height="33" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>Сегодня</h2>
+                        <span>04.02.2016</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="head-block-2">
+            <ul class="breadcrumbs">
+                <li><a class="br" id="l_about" href="#about" onclick="goto('about'); return false;">О КОМПАНИИ</a></li>
+                <li><a class="br" id="l_with" href="#with" onclick="goto('with'); return false;">С НАМИ УДОБНО</a></li>
+                <li><a class="br" id="l_assortiment" href="#assortiment" onclick="goto('assortiment'); return false;">АССОРТИМЕНТ</a></li>
+                <li><a class="br" id="l_contacts" href="#contacts" onclick="goto('contacts'); return false;">КОНТАКТЫ</a></li>
+                <li><a class="br" id="l_vacancies" href="#vacancies" onclick="goto('vacancies'); return false;">ВАКАНСИИ</a></li>
+                <li><a class="br" id="l_feedback" href="#feedback" onclick="goto('feedback'); return false;">НАПИСАТЬ НАМ</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="pg1-block-1">
+            <script>
+                $(function () {
+                    $.post('/ajax.php', {
+                        module: 'sliders',
+                        position: '1',
+                        func: 'get'
+                    }, function (data) {
+                        $('#aslider1').html(data);
+                    });
+                });
+            </script>
+            <div id="aslider1"> </div>
+        </div>
+
+        <p>
+            <a name="about"></a>
+        </p>
+
+        <div class="pg1-block-2">
+            <div class="right-left">
+                <div class="left">
+                    <h1>О компании</h1>
+
+                    <p><span>Компания КРОНА работает на рынке свежих овощей и фруктов в Санкт-Петербурге более 10 лет. </span></p>
+
+                    <p>За это время нам удалось организовать регулярные поставки как импортной, так и отечественной плодоовощной продукции. Широкая сеть поставщиков позволяет нашим клиентам бесперебойно получать постоянный и сезонный ассортимент качественной продукции по выгодным ценам.</p>
+
+                    <p>У нашей компании накоплен большой опыт работы со скоропортящейся продукцией и благодаря ему наши клиенты всегда уверены в надлежащей подготовке товара.</p>
+
+                    <p>Большую поддержку в работе компании оказывает наша репутация надежного и порядочного партнера!</p>
+                </div>
+
+                <div class="right"><img alt="" height="320" src="./images/pg1-block1.png" width="410" /></div>
+            </div>
+
+            <h3>МЫ РАДЫ ПОЯВЛЕНИЮ НОВЫХ КЛИЕНТОВ И ПРИГЛАШАЕМ ВАС К СОТРУДНИЧЕСТВУ!</h3>
+        </div>
+
+        <div class="pg1-block-3">
+            <div class="title">
+                <h1>Больше подробностей</h1>
+            </div>
+
+            <ul class="columns">
+                <li class="column column-active">НАШИ ЦЕННОСТИ</li>
+                <li class="column">НАША ЦЕЛЬ</li>
+                <li class="column">НАША СТРУКТУРА</li>
+            </ul>
+
+            <div class="item-container">
+                <div class="item item-active">
+                    <h1>Наши ценности</h1>
+
+                    <h2>Партнерство, Профессионализм и Позитивные именения.</h2>
+
+                    <ul>
+                        <li>
+                            <div class="pg1-bl3-logo"><img alt="" height="105" src="/images/pg1-bl3-1.png" width="99" /></div>
+
+                            <p><b>Партнерство</b> очень важно для нас и этот принцип мы используем в разных отношениях: с Клиентами, внутри компании, с Акционерами, с Государством и Обществом в целом. Плюсы получают все: клиенты – комфортное ведение бизнеса и доход, сотрудники - адекватную оплату труда и социальные гарантии, акционеры – признание и прибыль, государство – налоги и занятость, для общества – здоровый образ жизни, социальная поддержка и просто позитивные эмоции.</p>
+                        </li>
+                        <li>
+                            <div class="pg1-bl3-logo"><img alt="" height="111" src="/images/pg1-bl3-2.png" width="83" /></div>
+
+                            <p><b>Профессионализм</b> – это любовь и уважение сотрудников к своей работе, которое воплощается в высоком качестве поставляемой нами продукции.</p>
+                        </li>
+                        <li>
+                            <div class="pg1-bl3-logo"><img alt="" height="111" src="/images/pg1-bl3-3.png" width="93" /></div>
+
+                            <p><b>Позитивные Изменения </b>– это наше отношение к процессу постоянных изменений, происходящему вокруг нас, который мы делаем позитивным.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h1>Наша цель</h1>
+
+                    <p>Основная цель нашей компании - обеспечение стабильности поставок и качества товара, ведь для потребителей плодоовощной продукции главное – стабильно получать свежий товар в необходимом объеме по лучшей на данный момент времени цене.
+                        <br /> Мы обеспечиваем эту потребность, обеспечивая постоянный широкий ассортимент продукции В своей работе мы следуем простому, но главному правилу: Товар должен быть всегда свежим, а цена - рыночной!</p>
+                </div>
+
+                <div class="item">
+                    <h1>Наша структура</h1>
+
+                    <p>Основа нашей эффективности - это прозрачная структура компании и персональная ответственность сотрудников на всех участках бизнес-процесса.
+                        <br /> Главную задачу по удовлетворению потребностей Покупателя решает Отдел Продаж, а помогает уму в этом Отдел Закупки.
+                        <br /> Оптимизацией складского хранения, комплектацией и отгрузкой заказов занимается Отдел складской логистики во главе с Начальником склада.
+                        <br /> Финансовый отдел совместно с отделом продаж формирует и ведет контроль документооборота.
+                        <br /> Транспортно-логистические услуги мы доверяем проверенным поставщикам. Информационно-техническую и бухгалтерскую поддержку обеспечивают постоянные партнеры на базе аутсорсинговых соглашений.
+                        <br />
+                        <br />
+                        <u>В нашей команде работают профессионалы своего дела!</u></p>
+                </div>
+                <a class="more-ab-us" href="#">Больше о нас </a></div>
+        </div>
+
+        <p>
+            <a name="with"></a>
+        </p>
+
+        <div class="pg1-block-4">
+            <div class="title">
+                <h1>С нами удобно!</h1>
+            </div>
+            <script>
+                $(function () {
+                    $.post('/ajax.php', {
+                        module: 'slidersn',
+                        position: '1',
+                        func: 'get'
+                    }, function (data) {
+                        $('#aslidern1').html(data);
+                    });
+                });
+            </script>
+
+            <div id="aslidern1"> </div>
+        </div>
+
+        <div class="pg1-block-5">
+            <div class="title">
+                <h1>Как мы работаем</h1>
+            </div>
+
+            <ul>
+                <li><img alt="" height="140" src="/images/pg1-bl5-1.png" width="140" /> <span>ШАГ 1</span>
+
+                    <p>Вы оставляете
+                        <br /> заявку на нашем
+                        <br /> сайте или делаете
+                        <br /> нам звонок</p>
+                </li>
+                <li><img alt="" height="140" src="/images/pg1-bl5-2.png" width="140" /> <span>ШАГ 2</span>
+                    <p>Обсуждаете условия сотрудничества с нашим специалистом</p>
+                </li>
+                <li><img alt="" height="140" src="/images/pg1-bl5-3.png" width="140" /> <span>ШАГ 3</span>
+                    <p>Мы заключаем договор</p>
+                </li>
+                <li><img alt="" height="140" src="/images/pg1-bl5-4.png" width="140" /> <span>ШАГ 4</span>
+                    <p>Вы регулярно получаете наши предложения и делаете заказы
+                        <br /> исходя из ваших потребностей</p>
+                </li>
+                <li><img alt="" height="140" src="/images/pg1-bl5-5.png" width="140" /> <span>ШАГ 5</span>
+                    <p>Вы получаете качественный товар
+                        <br /> и отличный сервис,
+                        <br /> а мы – своевременную оплату и удовлетворение от работы.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pg1-block-6">
+            <div class="title">
+                <h2>Также вы можете скачать</h2>
+            </div>
+
+            <ul>
+                <li>
+                    <div class="download"><a href="#">&nbsp;</a></div>
+                    <a href="№"><span>Типовый договор</span> </a></li>
+                <li>
+                    <div class="download"><a href="#">&nbsp;</a></div>
+                    <a href="#"><span>Наши реквизиты</span> </a></li>
+                <li>
+                    <div class="download"><a href="#">&nbsp;</a></div>
+                    <a href="#"><span>Рекомендации<br />
+	по хранению</span> </a></li>
+                <li>
+                    <div class="download"><a href="#">&nbsp;</a></div>
+                    <a href="#"><span>Стандарты ЕЭК</span> </a></li>
+            </ul>
+        </div>
+
+        <p>
+            <a name="assortiment"></a>
+        </p>
+
+        <div class="pg1-block-7">
+            <div class="title">
+                <h1>Ассортимент</h1>
+            </div>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Наименование товара</th>
+                        <th>Страна</th>
+                        <th>Вес кор.,кг</th>
+                        <th>Калибр</th>
+                        <th>Цена руб/кг</th>
+                    </tr>
+                    <tr>
+                        <td>Яблоки, айдаред</td>
+                        <td>Сербия</td>
+                        <td>13</td>
+                        <td>70+</td>
+                        <td>79</td>
+                    </tr>
+                    <tr>
+                        <td>Томаты</td>
+                        <td>Марокко</td>
+                        <td>6</td>
+                        <td> </td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Картофель, Белый</td>
+                        <td>Россия</td>
+                        <td>25</td>
+                        <td> </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Капуста</td>
+                        <td>Россия</td>
+                        <td>31</td>
+                        <td> </td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Груша, конференция</td>
+                        <td>Молдавия</td>
+                        <td>12,5</td>
+                        <td>50+</td>
+                        <td>108</td>
+                    </tr>
+                    <tr>
+                        <td>Огруцы</td>
+                        <td>Иран</td>
+                        <td>8</td>
+                        <td> </td>
+                        <td>179</td>
+                    </tr>
+                    <tr>
+                        <td>Морковь, мытая</td>
+                        <td>Россия</td>
+                        <td>18</td>
+                        <td> </td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <td>Лук, репчатый</td>
+                        <td>Россия</td>
+                        <td>32</td>
+                        <td> </td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Мандарины</td>
+                        <td>Марокко</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>105</td>
+                    </tr>
+                    <tr>
+                        <td>Апельсины</td>
+                        <td>Египет</td>
+                        <td>15</td>
+                        <td>56-64-72</td>
+                        <td>76</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/files/price.xlsx">Весь Ассортимент</a></div>
+
+        <p>
+            <a name="contacts"></a>
+        </p>
+
+        <div class="pg1-block-8">
+            <div class="title">
+                <h1>Контакты</h1>
+            </div>
+            <ul class="columns">
+                <li class="column column-active">ОТДЕЛ ЗАКУПОК</li>
+                <li class="column">ОТДЕЛ ПРОДАЖ</li>
+            </ul>
+            <div class="contact-container">
+                <ul class="contact-item contact-active">
+                    <li>
+                        <img alt="" height="39" src="/images/bg1-bl8-1.png" width="40" />
+                        <p>+7(812) 456-52-56</p>
+                    </li>
+                    <li>
+                        <div class="logo"><img alt="" height="32" src="/images/94-128.png" width="23" /></div>
+
+                        <p>Адрес склада: <br> СПб, Коломяжский пр. 13 <br> корпус 5  дом 7</p>
+                    </li>
+                    <li>
+                        <img alt="" height="39" src="/images/bg1-bl8-1.png" width="40" /><p>+7(812) 456-52-56</p>
+                    </li>
+                </ul>
+            </div>            
+
+            <div class="contact-container">
+                <ul class="contact-item contact-active">
+                    <li>
+                        <img alt="" height="39" src="/images/bg1-bl8-1.png" width="40" /><p>+7(812) 456-52-56</p>
+                    </li>
+                    <li><img alt="" height="39" src="/images/skype-128.png" width="40" /> <span>margarita.uma</span></li>
+                    <li><img alt="" height="39" src="/images/mail-128.png" width="40" /> <span>mikhaylova@crona-fc.ru</span></li>                   
+                    <li><img alt="" height="39" src="/images/FIO.png" width="40" /> <span>Григорий <br> Григорьевич  Григорьев</span></li>
+                    <li>
+                        <img alt="" height="39" src="/images/bg1-bl8-1.png" width="40" /><p>+7(812) 456-52-56</p>
+                    </li>
+                    
+                </ul>
+                <ul class="contact-item">
+                    <li><img alt="" height="39" src="/images/bg1-bl8-1.png" width="40" /> <span>+7(812) 393-31-88, 394-11-08</span></li>
+                    <li><img alt="" height="39" src="/images/skype-128.png" width="40" /> <span>kursant82</span></li>
+                    <li><img alt="" height="39" src="/images/mail-128.png" width="40" /> <span>eyvazov@crona-fc.ru</span></li>
+                </ul>
+            </div>
+            <a href="#" class="road">
+               <img src="/images/print.png" alt="">
+                <span>Распечатать схему проезда</span>
+            </a>
+            <div class="map">
+
+            </div>
+
+            <ul>
+            </ul>
+        </div>
+
+        <p>
+            <a name="vacancies"></a>
+        </p>
+
+        <div class="pg1-block-9">
+            <div class="title">
+                <h1>Вакансии</h1>
+            </div>
+            <script>
+                $(function () {
+                    $.post('/ajax.php', {
+                        module: 'pages',
+                        func: 'vacancies'
+                    }, function (data) {
+                        $('#vacancies').append(data);
+                    });
+                });
+            </script>
+
+            <div id="vacancies"> </div>
+        </div>
+
+        <p>
+            <a name="feedback"></a>
+        </p>
+
+        <div class="pg1-block-10">
+            <div class="title">
+                <h1>Напишите нам</h1>
+            </div>
+            <script>
+                $(function () {
+                    $.post('/ajax.php', {
+                        module: 'feedback',
+                        func: 'showForm'
+                    }, function (data) {
+                        $('#formf').html(data);
+                    });
+                });
+            </script>
+
+            <div id="formf"> </div>
+        </div>
+        <div style="display:none" id="vac">
+            <table style="border-collapse: inherit;border-spacing: 2px;">
+                <tr>
+                    <td colspan="2" id="vacname" style="font-weight:bold"></td>
+                </tr>
+                <tr>
+                    <td>ФИО:</td>
+                    <td>
+                        <input type="text" id="order_fio" style="width:100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Телефон:</td>
+                    <td>
+                        <input type="text" id="order_phone" style="width:100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Почта:</td>
+                    <td>
+                        <input type="text" id="order_mail" style="width:100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Текст:</td>
+                    <td>
+                        <textarea style="width:99%" id="order_text"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="sendvac();">Отправить</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="ft-top">
+            <ul>
+                <li>
+                    <img src="/images/Logo-crona-eng-copy.png" width="254" height="60" alt="">
+                </li>
+                <li>
+                    <h3>ООО "КРОНА 2"</h3>
+                    <p>
+                        Оптовая торговля свежими овощами
+                        <br> и фруктами, сервис и доставка.
+                    </p>
+                </li>
+                <li>
+                    <h3>Адрес офиса и склада:</h3>
+                    <p>
+                        СПб, Коломяжский пр. 13 5/7 </p>
+                </li>
+                <li>
+                    <h3>Телефон:</h3>
+                    <p>
+                        <span>+ 7 (812)</span> 456-52-56
+                        <br><span>+ 7 (812)</span> 393-31-88 </p>
+                </li>
+            </ul>
+        </div>
+        <div class="ft-bot">
+            <div class="ft-bot-wr">
+                <h5 class="krona">
+                   2015 © «Крона». Все права защищены.
+               </h5>
+                <a class="social" href="#">vk</a>
+                <a class="kreozone" href="http://www.kreazone.ru/">Создание сайта:  www.kreazone.ru</a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/alerts/toastr.js"></script>
+    <script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+</body>
+
+</html>
