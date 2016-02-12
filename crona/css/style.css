@@ -1,19 +1,23 @@
 @font-face{
-    src: url(../fonts/sans-regular.ttf);
+    src: url(../fonts/sans-regular.ttf),
+         url(../fonts/sans-regular.woff);
     font-family: sans-regular;
 }
 @font-face{
-    src: url(../fonts/sans-medium.eot);
-    src: url(../fonts/sans-medium.eot?#iefix) format('embedded-opentype'),   
-         url(../fonts/sans-medium.ttf);   
     font-family: sans-medium;
+    src: url(../fonts/sans-medium.woff),        
+         url(../fonts/sans-medium.ttf);
+    
+    
 }
 @font-face{
-    src: url(../fonts/sans-light.ttf);
+    src: url(../fonts/sans-light.ttf),
+         url(../fonts/sans-light.woff);
     font-family: sans-light;
 }
 @font-face{
-    src: url(../fonts/sans-bold.ttf);
+    src: url(../fonts/sans-bold.ttf),
+         url(../fonts/sans-bold.woff);
     font-family: sans-bold;
 }
 
@@ -177,7 +181,7 @@ p{
 .breadcrumbs .br{
     color: #fff;
     text-decoration: none;
-    font-family: sans-medium;
+    font-family: "sans-medium";
     font-weight: 500;
     font-size: 16px;    
 }
