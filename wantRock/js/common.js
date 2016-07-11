@@ -1,16 +1,18 @@
 $(document).ready(function() {
 
-	$("#form").submit(function() {
+  var activeForm = document.querySelectorAll('#form');
+  Array.prototype.forEach.call(activeForm, function(item) {
+    $(item).submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			document.location = 'message.html';
 			$("#form").trigger("reset");
 		});
 		return false;
-	});
-	
+	 });
+  });    
 });

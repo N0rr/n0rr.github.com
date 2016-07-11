@@ -1,0 +1,91 @@
+.order-option-color {  
+  .order-option-color();
+}
+
+.order-option-color__title {    
+  margin-bottom: 28px;
+}
+
+.order-option-color__items {
+  .flex-row();  
+  flex-wrap: wrap; 
+  margin-bottom: 14px;
+}
+
+.order-option-color__input:checked + .order-option-color__item .order-option-color__checkbox{
+  background: url(/img/icon-tick.svg)no-repeat 50% 50%;
+}
+
+.order-option-color__item {
+  .flex-row(); 
+  align-items: center;
+  flex-basis: @mobile-wrap;
+}
+
+.order-option-color__checkbox {    
+  height: 38px;
+  width: 37px;
+  border: 2px solid @black;
+  margin-right: 21px;
+  margin-bottom: 22px;
+}
+
+.order-option-color__text {    
+  .txt-verdana(@txt-17px);
+  margin-top: -25px; 
+  letter-spacing: -0.7px;
+}  
+
+
+
+@media @tablet-width {
+  .order-option-color {    
+    .flex();
+    width: 100%;    
+    background: @grey-title;
+    padding-top: 61px;
+    padding-bottom: 27px;
+    margin-bottom: 63px;
+  }
+  
+  .order-option-color__wrapper { 
+    .center();
+    .flex-row();
+    align-items: flex-start;
+    width: @tablet-wrap;
+  }
+  
+  .order-option-color__items {
+    .flex-row();
+    flex-basis: 471px;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+    
+  }
+  
+  .order-option-color__item {      
+    flex-basis: 210px;     
+  }
+  
+  .order-option-color__checkbox {
+    height: 49px;
+    width: 49px;
+    margin-right: 28px;
+  }
+  
+  .order-option-color__text {
+    font-size: @txt-18px;    
+  }
+}
+
+
+@media @desktop-width {
+  .order-option-color__wrapper {
+    width: @desktop-wrap;
+  }
+  
+  .order-option-color__items {
+    flex-basis: 730px;
+  }
+}
+
