@@ -591,7 +591,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f9f9f9 url(/img/hero-mobile@1x.jpg) no-repeat 50% 0%;
+  background: #f9f9f9 url(../img/hero-mobile@1x.jpg) no-repeat 50% 0%;
   min-height: 300px;
 }
 .backg-house-toys__title {
@@ -1746,7 +1746,7 @@ textarea {
   .backg-house-toys {
     display: flex;
     flex-direction: column;
-    background: #f9f9f9 url(/img/hero-tablet@1x.jpg) no-repeat 50% 0%;
+    background: #f9f9f9 url(../img/hero-tablet@1x.jpg) no-repeat 50% 0%;
     width: 100%;
   }
   .backg-house-toys__title {
@@ -2533,7 +2533,7 @@ textarea {
     font-size: 14px;
   }
   .backg-house-toys {
-    background: #f9f9f9 url(/img/hero-mobile@2x.jpg) no-repeat 50% 0%;
+    background: #f9f9f9 url(../img/hero-mobile@2x.jpg) no-repeat 50% 0%;
   }
   .backg-house-toys__title {
     font-size: 50px;
@@ -2872,7 +2872,7 @@ textarea {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .backg-house-toys {
-    background: #f9f9f9 url(/img/hero-mobile@2x.jpg) no-repeat 50% 0%;
+    background: #f9f9f9 url(../img/hero-mobile@2x.jpg) no-repeat 50% 0%;
     background-size: cover;
   }
   .product-of-the-week__product-photo {
@@ -2882,7 +2882,7 @@ textarea {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .backg-house-toys {
-    background: #f9f9f9 url(/img/hero-desktop@2x.jpg) no-repeat 50% 0%;
+    background: #f9f9f9 url(../img/hero-desktop@2x.jpg) no-repeat 50% 0%;
     height: 100%;
     width: auto;
   }
@@ -2895,7 +2895,7 @@ textarea {
 }
 @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
   .backg-house-toys {
-    background: #f9f9f9 url(/img/hero-desktop@2x.jpg) no-repeat 50% 0%;
+    background: #f9f9f9 url(../img/hero-desktop@2x.jpg) no-repeat 50% 0%;
     height: 100%;
     width: auto;
   }
