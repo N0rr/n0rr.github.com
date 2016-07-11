@@ -753,7 +753,7 @@ textarea {
   width: 260px;
   margin-top: -2px;
   margin-bottom: 24px;
-  background: url(/img/triple-set-mobile@1x.jpg) 50% 50%;
+  background: url(../img/triple-set-mobile@1x.jpg) 50% 50%;
 }
 .product-of-the-week__price {
   font-family: Verdana, Arial, sans-serif;
@@ -1016,7 +1016,7 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: url(/img/map-mobile@1x.jpg) no-repeat 50% 50%;
+  background: url(../img/map-mobile@1x.jpg) no-repeat 50% 50%;
   background-size: cover;
   height: 457px;
   width: 320px;
@@ -1449,7 +1449,7 @@ textarea {
   margin-bottom: 14px;
 }
 .order-option-color__input:checked + .order-option-color__item .order-option-color__checkbox {
-  background: url(/img/icon-tick.svg) no-repeat 50% 50%;
+  background: url(../img/icon-tick.svg) no-repeat 50% 50%;
 }
 .order-option-color__item {
   display: flex;
@@ -1873,7 +1873,7 @@ textarea {
     top: 115px;
     height: 404px;
     width: 333px;
-    background: url(/img/triple-set-tablet@1x.jpg) 50% 50%;
+    background: url(../img/triple-set-tablet@1x.jpg) 50% 50%;
   }
   .product-of-the-week__price-block {
     display: flex;
@@ -1942,7 +1942,7 @@ textarea {
   }
   .reviews {
     padding: 0;
-    background: url(/img/review.jpg) no-repeat 0% 0%;
+    background: url(../img/review.jpg) no-repeat 0% 0%;
     width: 768px;
     min-height: 457px;
     margin-bottom: 72px;
@@ -2062,7 +2062,7 @@ textarea {
     font-size: 16px;
   }
   .map {
-    background: url(/img/map-tablet@1x.jpg) no-repeat 50% 50%;
+    background: url(../img/map-tablet@1x.jpg) no-repeat 50% 50%;
     width: 768px;
     height: 457px;
     margin-bottom: 55px;
@@ -2572,7 +2572,7 @@ textarea {
     height: 100%;
     width: 525px;
     top: 0;
-    background: url(/img/triple-set-desktop@1x.jpg) no-repeat 0% 0%;
+    background: url(../img/triple-set-desktop@1x.jpg) no-repeat 0% 0%;
     z-index: -1;
   }
   .product-of-the-week__info {
@@ -2684,7 +2684,7 @@ textarea {
   }
   .map {
     float: right;
-    background: url(/img/map-desktop@1x.jpg) no-repeat 50% 50%;
+    background: url(../img/map-desktop@1x.jpg) no-repeat 50% 50%;
     height: 457px;
     width: 525px;
     margin: 0;
@@ -2876,7 +2876,7 @@ textarea {
     background-size: cover;
   }
   .product-of-the-week__product-photo {
-    background: url(/img/triple-set-mobile@2x.jpg) 50% 50%;
+    background: url(../img/triple-set-mobile@2x.jpg) 50% 50%;
     background-size: cover;
   }
 }
@@ -2887,10 +2887,10 @@ textarea {
     width: auto;
   }
   .product-of-the-week__product-photo {
-    background: url(/img/triple-set-tablet@2x.jpg) 50% 50%;
+    background: url(../img/triple-set-tablet@2x.jpg) 50% 50%;
   }
   .reviews {
-    background: url(/img/review@2x.jpg) no-repeat 0% 0%;
+    background: url(../img/review@2x.jpg) no-repeat 0% 0%;
   }
 }
 @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
@@ -2900,6 +2900,6 @@ textarea {
     width: auto;
   }
   .product-of-the-week__product-photo {
-    background: url(/img/triple-set-desktop@2x.jpg) 0% 0%;
+    background: url(../img/triple-set-desktop@2x.jpg) 0% 0%;
   }
 }
