@@ -1,0 +1,41 @@
+.catalog-title {
+  .page-title();
+  min-height: 177px;
+}
+
+.catalog-title__title {
+  .h1();
+  padding-bottom: 9px;  
+}
+
+
+@media @tablet-width {
+  .catalog-title {
+    .page-title();  
+    margin-bottom: 47px;
+  }
+
+  .catalog-title__title {
+    .h1(@h1-tablet, @line: @h1-tablet-line);
+    margin-top: 92px;
+    padding-bottom: 85px;    
+  }  
+ 
+  .catalog-title__zigzag {
+    .visible();
+    width: 100%;        
+    margin-bottom: -5px;    
+  }  
+}
+
+
+@media @desktop-width {
+  .catalog-title {
+    margin-bottom: 129px;
+  }
+  
+  .catalog-title__title {
+    padding-bottom: 111px;
+    font-size: 50px;
+  }
+}

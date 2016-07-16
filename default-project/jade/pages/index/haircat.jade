@@ -1,0 +1,21 @@
+section.haircat
+  .container
+    div.row
+      .haircat__title.col-xs-12.col-md-12.col-lg-3
+        h1.haircat__h1 СТРИЖКА У НАС ЭТО ВЫГОДНО!
+        p.haircat__ttl-text. 
+          Мужская стрижка требует точного
+          подхода. Обратимся к статистике:
+        span.haircat__lie * - приведенные данные ложь
+
+      - var h_items={}
+      - h_items.item1 = ['1 500 *', 'рублей вложений']
+      - h_items.item2 = ['7200', 'секунд времени мастера']
+      - h_items.item3 = ['90 000', 'постриженных волос']
+      - h_items.item4 = ['500 000', 'лайков и комплиментов'] 
+
+      ul.haircat__items.col-xs-12.col-md-10.col-lg-8
+        each value, index in h_items           
+          li(class="haitcat__item col-xs-12 col-md-6" + ' haircat__' + index)
+            span.haircat__value= value[0]
+            span.haircat__desc= value[1]

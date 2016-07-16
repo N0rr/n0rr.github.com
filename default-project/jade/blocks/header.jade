@@ -1,0 +1,35 @@
+header.header
+  div.container
+    div.row      
+      img.header__logo(src="img/logotype-mobile.png", alt="")
+      nav.header__nav.navbar
+        div.header__menu-btn.navbar-toggle(data-toggle="collapse", data-target="#responsive-menu", role="button") x  
+
+        -
+          var nav = {
+           'ГЛАВНАЯ': index.navHref,
+           'НАШИ РАБОТЫ': catalog.navHref,
+           'ЗАПИСАТЬСЯ': '#',
+           'КОНТАКТЫ': '#',
+           'HTML ACADEMY': '#', 
+           'HTML ACADEM1Y': '#'
+          }        
+
+      
+        ul.header__menu.nav.navbar-nav.collapse.navbar-collapse(id="responsive-menu")  
+          each href, name in nav            
+            - if (href == currentPage.navHref)
+                li.header__item
+                  a.header__link.header__link--active(href= href)= name
+            - else
+                li.header__item
+                  a.header__link(href= href)= name
+          
+          a.header__enter.col-xs-12.hidden-sm.hiddem-md.hidden-lg(href="#") 
+            img.header__enter-img(src="#", alt="")
+            span.header__enter-span Вход
+          
+        a.header__enter.hidden-xs.col-sm-2.pull-right(href="#") 
+          img.header__enter-img(src="#", alt="")
+          span.header__enter-span Вход
+          

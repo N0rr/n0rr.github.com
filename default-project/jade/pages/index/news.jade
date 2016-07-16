@@ -1,0 +1,18 @@
+section.news
+  div.container
+    div.row
+      h1.news__title НОВОСТИ И АКЦИИ
+      ul.news__items          
+
+      - var news_items={}
+      - news_items.item1 = ['29', 'сент', 'Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.']
+      - news_items.item2 = ['19', 'сент', 'В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!']
+      - news_items.item3 = ['9', 'сент', 'Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!']
+
+      each item in news_items
+        li.news__item.col-xs-12.col-sm-6.col-md-4
+          div.news__date= item[0]
+            span.news__mounth= item[1]
+          p.news__text= item[2] 
+
+      a.news__btn ПОКАЗАТЬ ВСЕ

@@ -1,0 +1,21 @@
+- var dignity={}
+- dignity.item1 = ['dig-img1.png', 'БЫСТРО', 'Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки', ' active'] 
+- dignity.item2 = ['dig-img2.png', 'КРУТО', 'Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.', '']
+- dignity.item3 = ['dig-img3.png', 'ДОРОГО', 'Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?', '']      
+
+section.dignity
+  div.container
+    div.carousel.slide.row(id='carousel')
+      ul.dignity__wrap.carousel-inner
+        each item in dignity            
+          li(class="dignity__item item " + item[3])
+            div.dignity__img
+              img(src="img/" + item[0], alt="")
+            div.dignity__desc
+              h1.dignity__h1= item[1]
+              p.dignity__text= item[2]
+
+        ul.dignity__indicators.carousel-indicators
+          +slider_id('0', 'active', 'carousel', 'x')
+          +slider_id('1', '', 'carousel', 'x')
+          +slider_id('2', '', 'carousel', 'x')

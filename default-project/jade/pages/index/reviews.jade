@@ -1,0 +1,26 @@
+section.reviews
+  div.container
+    div.row      
+      h1.reviews__title.col-sm-5 ОТЗЫВЫ О НАС
+      a.reviews__btn.hidden-xs.col-sm-3.pull-right ОСТАВИТЬ СВОЙ
+
+      -var reviews_data={}
+      - reviews_data.item1 = [' active', 'img', 'Трэвис Баркер', 'Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!']
+      - reviews_data.item2 = ['', 'img', 'Трэвис Баркер', 'Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!']
+      - reviews_data.item3 = ['', 'img', 'Трэвис Баркер', 'Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!']
+
+      div.reviews__slider.carousel.slide.col-xs-12.col-md-10.col-lg-10(id="carousel-2")
+        ul.reviews__items.carousel-inner                
+          each item in reviews_data
+            li(class="reviews__item  item" + item[0])
+              div.reviews__img
+                img(src="img/" + item[1], alt="")
+              div.reviews__desc
+                span.reviews__desc-ttl= item[2]
+                p.reviews__desc-text= item[3]
+
+        +slider_id('0', 'active', 'carousel-2')
+        +slider_id('1', '', 'carousel-2')
+        +slider_id('2', '', 'carousel-2')
+
+        +slider_arrow('carousel-2', 'arrow', 'x')
