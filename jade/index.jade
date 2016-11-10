@@ -7,19 +7,28 @@ html
     div.container
       header.header
       
-        - var links={}        
-        - links.link1 = {link: 'pages/mishka', text: 'Мишка (адаптив)'}
-        - links.link2 = {link: 'pages/barbershop/build/index.html', text: 'Barbershop (адаптив)'}
-        - links.link3 = {link: 'pages/ktisis', text: 'Ктисис'}
-        - links.link4 = {link: 'pages/MPM', text: 'My purple mood'}
-        - links.link5 = {link: 'pages/sedona', text: 'Sedona'}
-        - links.link6 = {link: 'pages/hypertherm', text: 'Hypertherm'}
-        - links.link7 = {link: 'pages/Якорь', text: 'Якорь'}
-        - links.link8 = {link: 'pages/tsun', text: 'Tsun'}
-        - links.link9 = {link: 'pages/techmart', text: 'Techmart'}
+        - var adLinks={}
+        - adLinks.link1 = {link: 'pages/mishka', text: 'Мишка (адаптив)', img: 'img/mishka.jpg'}
+        - adLinks.link2 = {link: 'pages/barbershop/build/index.html', text: 'Barbershop (адаптив)', img: 'img/barbershop.jpg'}
+      
+        - var links={}
+        - links.link3 = {link: 'pages/ktisis', text: 'Ктисис', img: 'img/ktisis.jpg'}
+        - links.link4 = {link: 'pages/MPM', text: 'My purple mood', img: 'img/mpm.jpg'}
+        - links.link5 = {link: 'pages/sedona', text: 'Sedona', img: 'img/sedona.jpg'}
+        - links.link6 = {link: 'pages/hypertherm', text: 'Hypertherm', img: 'img/hyperthem.jpg'}
+        - links.link7 = {link: 'pages/Якорь', text: 'Якорь', img: 'img/якорь.jpg'}
+        - links.link8 = {link: 'pages/tsun', text: 'Tsun', img: 'img/tsun.jpg'}
+        - links.link9 = {link: 'pages/techmart', text: 'Techmart', img: 'img/techmart.jpg'}
         
+        ul.ad-list-items
+          each link in adLinks
+            li.ad-list-items__item
+              a.ad-list-items__link(href='' + link.link)
+                img.ad-list-items__img(src='' + link.img)
+                span.ad-list-items__text= link.text
         ul.list-items  
           each link in links
             li.list-items__item
               a.list-items__link(href='' + link.link)
-                span.list-items__text= link.text
+                img.list-items__img(src='' + link.img)
+                span.list-items__text= link.text                
