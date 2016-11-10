@@ -1,0 +1,28 @@
+extends ../template
+
+block currentpage
+  - var currentPage = index
+  
+prepend styles
+  link(rel="stylesheet", href="css/owl.carousel.css")  
+  link(rel="stylesheet", href="css/owl.theme.css")
+
+block content
+  main
+    include index/haircat    
+    include index/dignity
+    include index/news
+    include index/reviews
+    
+append jsinfooter
+  script(src="js/owl.carousel.min.js")
+  script(src="js/common.js", async)
+  script(src="js/ajax.js")
+  
+
+
+
+
+
+
+

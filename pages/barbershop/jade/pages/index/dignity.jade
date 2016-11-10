@@ -1,0 +1,24 @@
+- var dignity={}
+- dignity.item1 = {title: 'БЫСТРО', text: 'Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки.', image: 'dig-img1.png', height: '94'}
+- dignity.item2 = {title: 'КРУТО', text: 'Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.', image: 'dig-img2.png', height: '88'}
+- dignity.item3 = {title: 'ДОРОГО', text: 'Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?', image: 'dig-img3.png', height: '91'}  
+
+section.dignity
+  div.dignity__lie.hidden-sm.hidden-md.hidden-lg * &ndash; приведённые данные ложь    
+  div.container.dignity__wrapper
+    div.row
+      ul.dignity__items
+        each item in dignity
+          li(class="dignity__item")
+            div.dignity__img
+              img(src="img/" + item.image, alt="", width="95", height="" + item.height)
+            div.dignity__desc
+              h1.dignity__h1= item.title
+              p.dignity__text= item.text
+              
+    div.dignity__indicators.hidden-sm.hidden-md.hidden-lg
+      each item in dignity   
+        div.dignity__indicator
+          div.dignity__big-btn
+          
+//-  img.dignity__bcg(src="img/dignity.svg", alt="")

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="css/style.min.css")
+  body
+    div.container
+      header.header
+      
+        - var links={}        
+        - links.link1 = {link: 'pages/mishka', text: 'Мишка (адаптив)'}
+        - links.link2 = {link: 'pages/barbershop/build/index.html', text: 'Barbershop (адаптив)'}
+        - links.link3 = {link: 'pages/ktisis', text: 'Ктисис'}
+        - links.link4 = {link: 'pages/MPM', text: 'My purple mood'}
+        - links.link5 = {link: 'pages/sedona', text: 'Sedona'}
+        - links.link6 = {link: 'pages/hypertherm', text: 'Hypertherm'}
+        - links.link7 = {link: 'pages/Якорь', text: 'Якорь'}
+        - links.link8 = {link: 'pages/tsun', text: 'Tsun'}
+        - links.link9 = {link: 'pages/techmart', text: 'Techmart'}
+        
+        ul.list-items  
+          each link in links
+            li.list-items__item
+              a.list-items__link(href='' + link.link)
+                span.list-items__text= link.text

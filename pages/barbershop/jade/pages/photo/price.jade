@@ -1,0 +1,27 @@
+section.price
+  div.container
+    div.row      
+      h1.price__title ПРЕЙСКУРАНТ
+
+      - var table = {}
+      - table.item1 = {num: '1', col_1: 'Класическая стрижка', col_2: 'c мытьем головы', price: '1 500 руб.'}
+      - table.item2 = {num: '2', col_1: 'Современный вариант', col_2: 'c мытьем головы', price: '1 500 руб.'}
+      - table.item3 = {num: '3', col_1: 'Индивидуальный подход', col_2: 'c мытьем головы', price: '2 000 руб.'}
+      - table.item4 = {num: '4', col_1: 'Бритье бороды', col_2: 'без мытья', price: '500 руб.'}
+      - table.item5 = {num: '5', col_1: 'Бритье головы', col_2: 'с мытьем головы', price: '1 000 руб.'}
+      
+      div.price__wrapper
+        table.price__table
+          each i in table
+            tr.price__tr
+              td.price__item.price__number.hidden-xs= i.num
+              td.price__item.price__type= i.col_1
+              td.price__item.price__wash <span class="price__brack">(</span>#{i.col_2}<span class="price__brack">)</span>     
+              td.price__item.price__value= i.price
+
+        div.price__watch
+          div.price__img
+          p.price__watch-text C 10:00 до 14:00 скидка 20%
+          
+      
+      

@@ -1,0 +1,22 @@
+section.news
+  div.container
+    div.row.news__wrapper
+      h1.news__title НОВОСТИ И АКЦИИ
+      ul.news__items          
+
+        - var news_items={}
+        - news_items.item1 = {date: '29', mounth: 'сент', text: 'Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.', none: ''}
+        - news_items.item2 = {date: '19', mounth: 'сент', text: 'В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!', none: ''}     
+        - news_items.item3 = {date: '9', mounth: 'сент', text: 'Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и  узнаете, в чем здесь подвох!', none: 'news__show-only-desktop'}
+        - news_items.item4 = {date: '25', mounth: 'авг', text: 'Ягермайстер будет к концу сентября :(', none: 'news__more-news'}
+        - news_items.item5 = {date: '15', mounth: 'авг', text: '"Эдвард руки ножницы" вернулся из отпуска! Записывайтесь пока нет очереди!', none: 'news__more-news'}
+        - news_items.item6 = {date: '9', mounth: 'сент', text: 'Полторы стрижки по цене одной! приводите с собой двух друзей!', none: 'news__more-news'}
+      
+        each item in news_items
+          li(class="news__item col-xs-12 col-sm-6 col-md-4 "  + item.none)
+            a.news__link(href="#")
+              div.news__date= item.date
+                span.news__mounth= item.mounth
+              p.news__text= item.text 
+
+      a.news__btn ПОКАЗАТЬ ВСЕ

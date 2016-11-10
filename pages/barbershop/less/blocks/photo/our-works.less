@@ -1,0 +1,45 @@
+.our-works {
+  
+}
+
+.our-works__title {
+  .h1();
+  margin-top: 28px;  
+}
+
+@media @tablet-width {
+  .our-works {    
+    position: relative;
+    background: @white;
+    margin-top: -185px;
+    padding-bottom: 37px;    
+  }
+  
+  .our-works__wrapper {    
+    .flex-row();
+    justify-content: space-between;
+    margin-top: 56px;
+  }
+  
+  .our-works__title {
+    .h1(@size: @h1-tablet);
+    width: 240px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+  }
+  
+  .our-works__link {
+    .btn();
+    width: 160px;    
+    .btn-hvr();    
+  }
+}
+
+
+@media @desktop-width {
+  .our-works {
+    margin-top: -343px;
+  }
+}

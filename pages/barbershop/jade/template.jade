@@ -1,0 +1,32 @@
+include config
+include mixins
+
+block currentpage
+
+doctype html
+html
+  head
+    // Meta
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    
+    // Title
+    block title    
+      title= currentPage.title
+    // Styles
+    block styles
+      link(rel="stylesheet", href="css/bootstrap.min.css")
+      link(rel="stylesheet", href="css/style.min.css")      
+   
+  body    
+    // Header
+    include blocks/header
+    // Main-content
+    block content
+    // Footer
+    include blocks/footer
+    
+    //java-Script in footer    
+    block jsinfooter
+      script(src="js/jquery-2.1.4.min.js")
+      script(src="js/bootstrap.min.js")     

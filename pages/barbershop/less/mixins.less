@@ -1,0 +1,134 @@
+.center() {
+  display: block;
+  margin: 0 auto;
+}
+
+.visible() {
+  display: block;
+}
+
+.visible{
+  .visible();
+}
+
+.invisible() {
+  display: none;
+}
+
+.invisible{
+  .invisible();
+}
+
+.flex-row() {  
+  display: flex;
+  flex-direction: row;
+}
+
+.flex() {  
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Fonts //////////////
+
+// Text
+
+.text(@size: @txt-18px, @color: @white, @line: @line-24, @weight: 400) {
+  font-family: @font-1, Arial, sans-serif;
+  font-weight: @weight;
+  font-size: @size;
+  color: @color;
+  line-height: @line;
+}
+
+.text-bold(@size: @txt-18px, @color: @white, @line: @line-24, @weight: 400) {
+  font-family: @font-1-bold, Arial, sans-serif;
+  font-weight: @weight;
+  font-size: @size;
+  color: @color;
+  line-height: @line;
+}
+
+// title
+
+.h1(@size: @h1-mobile, @color: @black, @line: @line-30) {
+  font-size: @size;
+  font-weight: 700;
+  font-family: @font-1-bold, Arial, sans-serif;
+  text-align: center;  
+  line-height: @line;
+  color: @color;
+  margin: 0;
+  padding: 0;
+}
+
+// buttons
+
+.btn(@width: 280px, @border: @border, @color: @black) {
+  display: block;
+  .text-bold(@size: @txt-18px, @color: @color);
+  border: 1px solid @border;
+  padding: 13px;
+  padding-bottom: 12px;
+  text-align: center;
+  cursor: pointer;
+  width: @width;
+}
+
+// Elements
+
+.big-btn(@color: @white) {
+  margin-top: 15px;
+  border: 1px solid @color;
+  border-radius: 0;
+  transform: rotate(45deg);
+  margin-right: 10px;
+  margin-left: 20px;
+  height: 8px;
+  width: 8px; 
+}
+
+.haircat-item() {
+  height: 20px;
+  width: 21px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/scissors-icon.png)no-repeat 50% 50%;
+}
+
+.shaving-item() {
+  display: inline-block;
+  height: 21px;
+  width: 23px;
+  vertical-align: middle;
+  background: url(../img/beard-icon.png)no-repeat 50% 50%;
+}
+
+.mustache-item() {
+  width: 45px;
+  height: 12px;
+  margin-right: 20px;
+  display: inline-block;
+  background: url(../img/mustache-icon.png)no-repeat 50% 50%;
+}
+
+.input() {
+  .text(@color: @black);  
+  .center();
+  padding: 11.8px;
+  padding-left: 16px;
+  width: 87%;
+  background: @white;
+  outline: none;
+  border: 1px solid @border;
+  .input-hvr();
+}
+
+.clear-fix() {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+

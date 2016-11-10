@@ -1,0 +1,36 @@
+section.reviews
+  div.container
+    div.row     
+      h1.reviews__title ОТЗЫВЫ О НАС
+      a.reviews__btn.hidden-xs ОСТАВИТЬ СВОЙ
+
+      -var reviews_data={}
+      - reviews_data.item1 = {imgMob: 'mobile-review.jpg', imgTab: 'tablet-review.png', imgDesk: 'desktop-review.jpg', author: 'Трэвис Баркер', review: 'Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!'}
+      - reviews_data.item2 = {imgMob: 'mobile-review.jpg', imgTab: 'tablet-review.png', imgDesk: 'desktop-review.jpg', author: 'Трэвис Баркер', review: 'Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!'}
+      - reviews_data.item3 = {imgMob: 'mobile-review.jpg', imgTab: 'tablet-review.png', imgDesk: 'desktop-review.jpg', author: 'Трэвис Баркер', review: 'Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!'}   
+      
+      
+      div.reviews__wrapper     
+        div.reviews__prev.hidden-xs
+        ul.reviews__items.reviews__items--carousel          
+          li.reviews__owl-del
+          li.reviews__owl-del
+        template(id="review-template")
+          div.owl-item.reviews__owl-item
+            li(class="reviews__item")
+              div.reviews__img
+                picture
+                  source.reviews__img-desk(media="(min-width: 990px)", srcset="")
+                  source.reviews__img-tab(media="(min-width: 768px)", srcset="")
+                  img.reviews__img-mob(src="", alt="")
+              div.reviews__desc
+                span.reviews__author
+                p.reviews__text
+        div.reviews__next.hidden-xs
+      
+    div.reviews__indicators
+      each item in reviews_data 
+        div.reviews__indicator
+          div.reviews__big-btn
+     
+        

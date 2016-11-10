@@ -1,0 +1,36 @@
+section.clients
+  div.container
+    div.row      
+      div.clients__wrapper
+
+
+        -var clients = {}
+        - clients.item1 = {imgM: "photo-2-mobile", imgT: 'photo-2-tablet', imgD: 'photo-2-desktop', name: "Саша Мальцев", text: "Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?", ser_1: "haircat "}
+        - clients.item2 = {imgM: "photo-3-mobile", imgT: 'photo-3-tablet', imgD: 'photo-3-desktop', name: "Владимир Иваныч", text: "К зимнему сезону - готов!", ser_2: 'shaving ', ser_3: 'mustache '}     
+        - clients.item3 = {imgM: "photo-4-mobile", imgT: 'photo-4-tablet', imgD: 'photo-4-desktop', name: "Винстон Синий", text: "Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!", ser_1: "haircat "}
+
+
+
+        each item in clients
+          div.clients__client
+            div.clients__img
+              picture
+                source(media="(min-width: 990px)", srcset="img/" + item.imgD + '.jpg')
+                source(media="(min-width: 640px)", srcset="img/" + item.imgT + '.jpg')
+                img(src="img/" +  item.imgM + '.jpg', alt="")
+            div.clients__desc
+              span.clients__name= item.name
+              p.clients__text= item.text          
+              ul.clients__services  
+                - if(item.ser_1 != undefined)
+                    li(class="clients__item clients__" + item.ser_1)
+                      div.clients__img
+                      span.clients__service СТРИЖКА
+                - if(item.ser_2 != undefined)
+                    li(class="clients__item clients__" + item.ser_2)
+                      div.clients__img
+                      span.clients__service БОРОДА
+                - if(item.ser_3 != undefined)
+                    li(class="clients__item clients__" + item.ser_3)
+                      div.clients__img
+                      span.clients__service УСЫ             

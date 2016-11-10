@@ -1,0 +1,166 @@
+.haircat {
+  margin-top: 26px;
+}
+
+.haircat__title {
+  .flex();
+  align-items: center;  
+}
+
+.haircat__h1 {
+  .h1();
+  width: 181px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.haircat__text {
+  .text(@size: @txt-20px; @color: @black);
+  width: 244px;
+  letter-spacing: 0.1px;
+  margin-bottom: 30px;
+}
+
+.haircat__items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.haircat__item {
+  .flex-row();
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-top: 15px;  
+  padding-bottom: 16px;  
+}
+
+.haircat__item1,
+.haircat__item4 {
+  background: @item-1;
+}
+
+.haircat__item2 {
+  background: @item-2;
+}
+
+.haircat__item3 {
+  background: @item-3;
+}
+
+.haircat__value {
+  .text-bold(@size: @txt-40px);
+  margin-left: 6%;
+}
+
+.haircat__desc {
+  .text(@size: @txt-18px);
+  text-align: right;
+  width: 109px;
+  margin-right: 6%;
+}
+
+
+@media @tablet-width {
+  .haircat {
+    background: @item-3;
+    margin-top: 0;
+  }
+  
+  .haircat__title {
+    flex-direction: row;    
+    background: @white;
+    padding: 40px;
+    padding-top: 31px;
+    padding-bottom: 28px;   
+    flex-wrap: wrap;
+    margin-top: -185px;
+    align-items: flex-start;    
+    
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 43px;
+      border: 12px solid transparent;
+      border-right: 12px solid @white;
+      border-top: 12px solid @white;
+      
+    }
+  }  
+  
+  .haircat__h1 {
+    font-size: @h1-tablet;
+    line-height: @line-40;
+    text-align: left;
+    width: 220px;
+    text-transform: none;
+    margin-right: 92px;  
+    margin-bottom: 22px;
+  }
+  
+  .haircat__text {
+    width: 206px;
+    color: @black;    
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: @line-27;
+  }
+  
+  .haircat__lie {
+    .text(@color: @color-8, @size: @txt-20px);
+    margin-top: 0;
+    width: 100%;
+    
+  }
+  
+  .haircat__item {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 25px;
+    padding-bottom: 28px;
+  }
+  
+  .haircat__value {
+    font-size: @txt-72px;
+    line-height: 72px;    
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  
+  .haircat__desc {
+    width: auto;
+    font-size: @txt-20px;    
+  }  
+  
+}
+
+
+@media @desktop-width {
+  .haircat {
+    margin-top: -157px;
+  }
+  
+  .haircat__title {
+    margin: 0;
+    
+  }
+  
+  .haircat__h1 {
+    margin: 0;
+    margin-bottom: 38px;
+  }
+  
+  .haircat__text {
+    margin-bottom: 31px;
+  }
+  
+  .haircat__items {
+    
+  }
+}
+
+

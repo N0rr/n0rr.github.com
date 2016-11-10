@@ -1,0 +1,21 @@
+section.more-services
+  div.container
+    div.row
+      div.more-services__title ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:
+      
+      - var more = {}
+      - more.item1 = {text: 'Подкрасить бороду'}
+      - more.item2 = {text: 'Накрутить усы'}
+      - more.item3 = {text: 'Причесать бороду'}
+      - more.item4 = {text: 'Подровнять виски'}
+      - more.item5 = {text: 'Убрать седину'}
+      - more.item6 = {text: 'Отполировать лысину'}
+     
+      div.more-services__items
+        each i in more
+          label.more-services__item          
+            input.more-services__input(type="checkbox", name="more-services")
+            div.more-services__checkbox
+            span.more-services__text= i.text
+      
+      input.more-services__btn(type="submit", value="ОТПРАВИТЬ ЗАЯВКУ")

@@ -1,0 +1,141 @@
+.clients {
+  margin-top: 17px;
+}
+
+.clients__wrapper {
+  .flex();
+  align-items: center;
+}
+
+.clients__client {
+  margin-bottom: 20px;  
+}
+
+.clients__img {
+  width: 280px;
+}
+
+.clients__desc {
+  width: 280px;
+  border: 1px solid @border;  
+  padding: 20px;
+  padding-top: 25px;
+  border-top: none;
+}
+
+.clients__name {
+  .text-bold(@color: @black, @size: @txt-24px, @line: @line-27);  
+}
+
+.clients__text {
+  .text(@color: @black, @line: @line-27);
+  margin-top: 13px;
+}
+
+.clients__services {
+  margin-top: 17px;
+  padding: 0;
+  list-style: none;
+}
+
+.clients__item {
+  display: inline-block;
+  margin-right: 28px;
+}
+
+.clients__haircat .clients__img {
+  .haircat-item();
+  margin-right: 15px;
+}
+
+.clients__shaving .clients__img {
+  .shaving-item();
+  margin-right: 15px;
+}
+
+.clients__mustache .clients__img {
+  .mustache-item();
+  margin-right: 15px;
+}
+
+.clients__service {
+  .text(@color: @black, @size: @txt-16px);
+}
+
+
+@media @tablet-width {
+  .clients {
+    margin-top: 41px;
+  }
+  
+  .clients__client {
+    .flex-row();
+    width: 640px;
+    height: 294px;
+    margin-bottom: 41px;
+  }
+  
+  .clients__img {
+    width: 270px;
+  }
+  
+  .clients__desc {
+    .flex();
+    border-left: none;
+    border-top: 1px solid @border;    
+    height: 100%;
+    padding: 39px;
+    flex-grow: 1;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 31px;
+  }
+  
+  .clients__text {
+    margin-top: 26px;    
+  }
+  
+  .clients__services {
+    margin-top: auto;
+  }
+}
+
+
+@media @desktop-width {
+  .clients__wrapper {      
+    flex-direction: row;    
+    align-items: stretch;
+    flex-wrap: wrap;  
+    margin-bottom: 18px;
+  }
+  
+  .clients__img {
+    width: 294px;
+    height: 294px;
+  }
+  
+  .clients__client {  
+    flex-direction: column;
+    width: 294px;  
+    height: auto;    
+    &:not(:nth-child(3n)) {
+      margin-right: 39px;
+    }
+  }
+  
+  .clients__desc {    
+    width: 100%;
+    border-left: 1px solid @border;
+    border-top: none;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 35px; 
+    height: 100%;
+    padding-bottom: 23px;
+  }
+  
+  .clients__services {
+    margin-top: auto;
+    padding-top: 15px;
+  }
+}

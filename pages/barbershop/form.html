@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title-->
+    <title>Запись на Стрижку</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>   
+    <!-- Header-->
+    <header class="header">   
+      <picture>
+        <source media="(min-width: 990px)" srcset="img/logotype-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.png"><img src="img/logotype-mobile.png" alt="" class="header__logo">
+      </picture>
+      <nav class="header__nav navbar">
+        <div class="header__nav-wrapper">
+          <input type="checkbox" id="menu-toggle" class="header__btn-input">
+          <label data-toggle="collapse" data-target="#responsive-menu" role="button" for="menu-toggle" class="header__menu-btn navbar-toggle">         </label>
+          <div class="header__current-page hidden-sm hidden-md hidden-lg">ЗАПИСАТЬСЯ</div>
+          <ul id="responsive-menu" class="header__menu nav navbar-nav collapse navbar-collapse"> 
+            <li class="header__item"><a href="index.html" class="header__link">ГЛАВНАЯ</a></li>
+            <li class="header__item"><a href="photo.html" class="header__link">НАШИ РАБОТЫ</a></li>
+            <li class="header__item"><a href="form.html" class="header__link header__link--active">ЗАПИСАТЬСЯ</a></li>
+            <li class="header__item"><a href="#" class="header__link">КОНТАКТЫ</a></li>
+            <li class="header__item"><a href="#" class="header__link">HTML ACADEMY</a></li><a href="#" class="header__enter col-xs-12 hidden-sm hidden-md hidden-lg"> 
+              <div class="header__enter-img"></div><span class="header__enter-span">Вход</span></a>
+          </ul><a href="#" class="header__enter hidden-xs col-sm-2 pull-right"> 
+            <div class="header__enter-img"></div><span class="header__enter-span">Вход</span></a>
+        </div>
+      </nav>
+    </header>
+    <!-- Main-content-->
+    <main>   
+      <form action="/" class="form">
+        <section class="get-a-haircut">
+          <div class="container">
+            <div class="row">
+              <div class="get-a-haircut__wrapper">
+                <h1 class="get-a-haircut__title">ЗАПИСЬ НА СТРИЖКУ</h1><a href="index.html" class="get-a-haircut__link hidden-xs">НА ГЛАВНУЮ </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form-info">
+          <div class="container">
+            <div class="row">
+              <div class="form-info__full-name">
+                <input required type="text" placeholder="Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1,}" class="form-info__input form-info__name form-info__l-name">
+                <input required type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]{1,}" class="form-info__input form-info__name form-info__f-name">
+                <input required type="text" placeholder="Отчество" pattern="[A-Za-zА-Яа-яЁё]{1,}" class="form-info__input form-info__name form-info__m-name">
+              </div>
+              <div class="form-info__contacts">
+                <input type="text" required placeholder="Контактный телефон" pattern="[7-8]([0-9]{3})[0-9]{3}[0-9]{2}[0-9]{2}" class="form-info__input form-info__contact form-info__tel">
+                <input type="email" required placeholder="Контактный e-mail" class="form-info__input form-info__contact form-info__mail">
+              </div>
+              <div class="form-info__more-info">
+                <textarea name="" cols="30" rows="10" placeholder="Доп. информация для мастера" class="form-info__textarea"></textarea>
+              </div>
+              <div class="form-info__progress-bar">
+                <div class="form-info__success-line"></div><span class="form-info__success-info">0%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="beard-model">
+          <div class="container">  
+            <div class="row">
+              <div class="beard-model__title">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
+              <div class="beard-model__items">
+                <label class="beard-model__checkbox">           
+                  <input type="radio" id="beard-1" name="beard" value="1" class="beard-model__input">
+                  <div class="beard-model__btn"></div><span class="beard-model__type">адмирал</span>
+                  <div class="beard-model__img"><img src="img/beard-1.png" alt=""></div>
+                </label>
+                <label class="beard-model__checkbox">           
+                  <input type="radio" id="beard-2" name="beard" value="2" class="beard-model__input">
+                  <div class="beard-model__btn"></div><span class="beard-model__type">лесоруб</span>
+                  <div class="beard-model__img"><img src="img/beard-2.png" alt=""></div>
+                </label>
+                <label class="beard-model__checkbox">           
+                  <input type="radio" id="beard-3" name="beard" value="3" class="beard-model__input">
+                  <div class="beard-model__btn"></div><span class="beard-model__type">полярник</span>
+                  <div class="beard-model__img"><img src="img/beard-3.png" alt=""></div>
+                </label>
+                <label class="beard-model__checkbox">           
+                  <input type="radio" id="beard-4" name="beard" value="4" class="beard-model__input">
+                  <div class="beard-model__btn"></div><span class="beard-model__type">боярин</span>
+                  <div class="beard-model__img"><img src="img/beard-4.png" alt=""></div>
+                </label>
+                <label class="beard-model__checkbox">           
+                  <input type="radio" id="beard-5" name="beard" value="5" class="beard-model__input">
+                  <div class="beard-model__btn"></div><span class="beard-model__type">мудрец</span>
+                  <div class="beard-model__img"><img src="img/beard-5.png" alt=""></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="more-services">
+          <div class="container">
+            <div class="row">
+              <div class="more-services__title">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:</div>
+              <div class="more-services__items">
+                <label class="more-services__item">         
+                  <input type="checkbox" name="more-services" class="more-services__input">
+                  <div class="more-services__checkbox"></div><span class="more-services__text">Подкрасить бороду</span>
+                </label>
+                <label class="more-services__item">         
+                  <input type="checkbox" name="more-services" class="more-services__input">
+                  <div class="more-services__checkbox"></div><span class="more-services__text">Накрутить усы</span>
+                </label>
+                <label class="more-services__item">         
+                  <input type="checkbox" name="more-services" class="more-services__input">
+                  <div class="more-services__checkbox"></div><span class="more-services__text">Причесать бороду</span>
+                </label>
+                <label class="more-services__item">         
+                  <input type="checkbox" name="more-services" class="more-services__input">
+                  <div class="more-services__checkbox"></div><span class="more-services__text">Подровнять виски</span>
+                </label>
+                <label class="more-services__item">         
+                  <input type="checkbox" name="more-services" class="more-services__input">
+                  <div class="more-services__checkbox"></div><span class="more-services__text">Убрать седину</span>
+                </label>
+                <label class="more-services__item">         
+                  <input type="checkbox" name="more-services" class="more-services__input">
+                  <div class="more-services__checkbox"></div><span class="more-services__text">Отполировать лысину</span>
+                </label>
+              </div>
+              <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" class="more-services__btn">
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">   
+        <div class="row">
+          <ul class="footer__items row">
+            <li class="footer__item footer__item--ttl col-xs-12 col-md-5 col-lg-4">
+              <div class="footer__title">Барбершоп Бородинский
+                <p class="footer__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8 </p><a href="tel:+8125556666" class="footer__tel"><span class="footer__tel-span hidden-xs"> Тел.:</span>  +7 (812) 555-66-66</a>
+              </div>
+            </li>
+            <li class="footer__item col-xs-12 col-md-2 col-lg-2"> <span class="footer__follow hidden-xs hidden-sm">Давайте дружить!</span>
+              <ul class="footer__social"> 
+                <li class="footer__social-item"><a href="#" class="footer__social-link">
+                    <picture>
+                      <source media="(min-width: 990px)" srcset="img/vk-icon-small.png"><img src="img/vk-icon-big.png" alt="">
+                    </picture></a></li>
+                <li class="footer__social-item"><a href="#" class="footer__social-link">
+                    <picture>
+                      <source media="(min-width: 990px)" srcset="img/facebook-icon-small.png"><img src="img/facebook-icon-big.png" alt="">
+                    </picture></a></li>
+                <li class="footer__social-item"><a href="#" class="footer__social-link">
+                    <picture>
+                      <source media="(min-width: 990px)" srcset="img/insta-icon-small.png"><img src="img/insta-icon-big.png" alt="">
+                    </picture></a></li>
+              </ul>
+            </li>
+            <li class="footer__item footer__item--dev col-xs-12 col-md-4 col-lg-2"><span class="footer__development">Разработано:</span><a href="#" class="footer__academy-link">HTML ACADEMY</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--java-Script in footer    -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js">    </script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

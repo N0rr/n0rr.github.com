@@ -1,0 +1,146 @@
+.more-services {
+  margin-top: 13px;  
+}
+
+.more-services__title {
+  .text(@color: @black, @size: @txt-20px);
+  text-align: center;  
+}
+
+.more-services__items {
+  .flex();
+  margin-top: 36px;
+  padding-left: 20px;
+}
+
+.more-services__item {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.more-services__input {
+  display: none;
+}
+
+.more-services__input:checked + .more-services__checkbox:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 9.5px;
+  height: 2.5px;
+  background: @black;
+  transform: rotate(45deg);
+  border-radius: 1px;
+  margin-top: 20px;
+  margin-left: 4px;
+}
+
+.more-services__input:checked + .more-services__checkbox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2.5px;
+  background: @black;
+  transform: rotate(-45deg);
+  border-radius: 1px;
+  margin-top: 15px;
+  margin-left: 8px;
+}
+
+.more-services__checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 36px;
+  width: 36px;
+  border: 1px solid @border;
+  background: @white;
+  margin-right: 23px;
+  .checkbox-hvr();
+}
+
+.more-services__text {
+  display: inline-block;
+  vertical-align: middle;
+  .text(@color: @black);
+}
+
+.more-services__btn {  
+  .center();
+  margin-top: 26px;
+  width: 88%;
+  .btn(@color: @white);
+  background: @color-1;
+  margin-bottom: 76px;
+  .submit-hvr();
+}
+
+
+@media @tablet-width {
+  .more-services {
+    margin-top: 30px;
+  }
+  
+  .more-services__title {
+    font-size: @txt-30px;
+    position: relative;
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 130px;
+      top: 12px;
+      left: 0;
+      display: block;
+      background: @border;
+    }
+    &:after {
+      left: inherit;
+      right: 0;
+    }
+  }
+  
+  .more-services__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 71px;
+    padding: 0;
+  }
+  
+  .more-services__item {
+    width: 50%;   
+    margin-bottom: 47px;
+  }
+  
+  .more-services__text {
+    font-size: @txt-24px;
+  }
+  
+  .more-services__btn {
+    width: 100%;
+    font-size: @txt-24px;
+    margin-top: 12px;
+    padding: 22px;
+  }
+}
+
+
+@media @desktop-width {
+  .more-services__title {
+    &:before,
+    &:after {
+      width: 280px;
+    }
+  }
+  .more-services__item {
+    width: 245px;
+    margin-right: 75px;
+  }
+  
+  .more-services__btn {
+    margin-top: 32px; 
+    margin-bottom: 87px;
+  }
+}

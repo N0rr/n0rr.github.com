@@ -1,0 +1,15 @@
+extends ../template
+
+block currentpage
+  - var currentPage = form
+
+block content
+  main    
+    form.form(action="/")
+      include form/get-a-haircut
+      include form/form-info
+      include form/beard-model
+      include form/more-services
+      
+append jsinfooter
+  script(src="js/form.js")

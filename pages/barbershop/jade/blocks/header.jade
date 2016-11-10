@@ -1,0 +1,38 @@
+header.header    
+  picture
+    source(media="(min-width: 990px)", srcset="img/logotype-desktop.png")
+    source(media="(min-width: 768px)", srcset="img/logotype-tablet.png")
+    img.header__logo(src="img/logotype-mobile.png", alt="")
+  nav.header__nav.navbar
+    div.header__nav-wrapper
+      input.header__btn-input(type="checkbox", id="menu-toggle")
+      label.header__menu-btn.navbar-toggle(data-toggle="collapse", data-target="#responsive-menu", role="button", for="menu-toggle")          
+
+      -
+        var nav = {
+         'ГЛАВНАЯ': index.navHref,
+         'НАШИ РАБОТЫ': photo.navHref,
+         'ЗАПИСАТЬСЯ': form.navHref,
+         'КОНТАКТЫ': '#',
+         'HTML ACADEMY': '#'        
+        }        
+
+      - var page = currentPage.page
+      - if (page == currentPage.page)
+        div.header__current-page.hidden-sm.hidden-md.hidden-lg= page
+      ul.header__menu.nav.navbar-nav.collapse.navbar-collapse(id="responsive-menu")  
+        each href, name in nav            
+          - if (href == currentPage.navHref)
+              li.header__item
+                a.header__link.header__link--active(href= href)= name
+          - else
+              li.header__item
+                a.header__link(href= href)= name
+
+        a.header__enter.col-xs-12.hidden-sm.hidden-md.hidden-lg(href="#") 
+          div.header__enter-img
+          span.header__enter-span Вход
+
+      a.header__enter.hidden-xs.col-sm-2.pull-right(href="#") 
+        div.header__enter-img
+        span.header__enter-span Вход

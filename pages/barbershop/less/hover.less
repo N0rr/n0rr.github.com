@@ -1,0 +1,109 @@
+.btn-hvr {
+  &:hover {
+    border-color: @border-hvr;  
+    color: @black;
+    text-decoration: none;
+  }
+  &:active {
+    background: @border-hvr;
+    color:rgba(0, 0, 0, 0.3);
+  } 
+}
+
+.news-hvr {
+  &:hover {
+    text-decoration: underline;
+    color: @color-1;
+  }  
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover .news__date {
+    background: @color-1;
+  } 
+  &:hover .news__text {
+    color: @color-1;
+  }
+  &:hover .news__date:after {
+    border-top-color: @color-1;   
+  }
+}
+
+
+.input-hvr {
+  &:hover {
+    border-color: @border-hvr;
+  }
+  &:focus {
+    border-color: @border-fcs;
+  }	
+}
+
+.input-valid {
+	&:valid {
+		border-color: @success;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: @success;
+		box-shadow: 0px 0px 1px 1px @success;
+	}
+	&:focus {
+		border-color: rgba(80,250,20, 1);
+	}	
+}
+
+.input-invalid {
+	&:invalid {
+		border-color: red;
+		box-shadow: 0px 0px 1px 1px rgba(250,50,50, 1);	
+	}
+	&:focus {
+		border-color: red;
+	}
+}
+
+.radio-hvr {
+  &:hover {
+    border-color: @border-hvr;
+    cursor: pointer;
+  }
+  &:active {
+    background: @border-hvr;
+    border-color: @border-hvr;
+  }  
+}
+
+.checkbox-hvr() {
+  &:hover {
+    border-color: @border-hvr;
+    cursor: pointer;
+  }
+  &:active {
+    background: @border-hvr;
+  }
+}
+
+.submit-hvr() {
+  &:hover {
+    background: @color-2;
+  }
+  &:active {
+    color: @border-hvr;
+  }
+  &:disabled {
+    background: @disabled;
+  }
+}
+
+.ft-border-hvr() {
+  &:hover {
+    border-color: @ft-border-hvr;
+    text-decoration: none;
+    color: @white;
+  }
+  &:active {
+    border-color: @ft-border-act;
+    background: @ft-border-act;
+    opacity: 0.3;
+  }
+}

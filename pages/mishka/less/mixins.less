@@ -1,0 +1,131 @@
+.center() {
+  display: block;
+  margin: 0 auto;
+}
+
+.visible() {
+  display: block;
+}
+
+.visible{
+  .visible();
+}
+
+.invisible() {
+  display: none;
+}
+
+.invisible{
+  .invisible();
+}
+
+.flex-row() {  
+  display: flex;
+  flex-direction: row;
+}
+
+.flex() {  
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-sub(@width: auto) {
+  display: block;
+  font-family: OpenSansBold, arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;    
+  color: @color-444;
+  text-align: center;  
+  border: 2px solid @color-444;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 17px;
+  padding-bottom: 17px;  
+  max-width: @width;
+  background: @white;
+  cursor: pointer;
+  
+  &:hover {
+    background: @color-444;
+    color: @white;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);    
+  }
+}
+
+.page-title() {
+  .flex();
+  background: @grey-title;
+  min-height: 183px;  
+  justify-content: center;    
+}
+
+.txt-verdana(@font: @txt-16px, @line: @line-24, @color: @black) {
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: 700;
+  font-size: @font;  
+  color: @color;
+  line-height: @line;  
+  margin: 0;
+  padding: 0;
+}
+
+.txt-tahoma(@font: @txt-18px, @line: @line-24, @color: @black) {
+  color: @color;
+  font-size: @font;
+  font-family: Tahoma, arial, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: @line;
+}
+
+.h1(@size: @h1-mobile, @color: @black, @line: @line-30) {
+  font-size: @size;
+  font-weight: 700;
+  font-family: Verdana, arial, sans-serif;
+  text-align: center;
+  line-height: @line;
+  color: @color;
+  margin: 0;
+  padding: 0;
+}
+
+.txt-opensans(@font: @txt-14px, @line: @line-30, @weight: 400) {  
+  font-family: OpenSans, arial, sans-serif;
+  font-size: @font;
+  font-weight: @weight;
+  color: @color-444;
+  line-height: @line;
+  padding: 0;
+  margin: 0;
+}
+
+.form-label() {
+  font-family: Verdana, arial, sans-serif;
+  font-size: 16.87px;
+  font-weight: 700;
+  color: @black;
+  line-height: 19px;  
+}
+
+.form-input() {
+  border: none;
+  outline: none;
+  font-family: Verdana, arial, sans-serif;
+  font-size: 16.87px;
+  font-weight: 400;
+  line-height: 19px;
+  border-bottom: 2px solid @black;
+  padding-bottom: 16px;
+  margin-bottom: 26px;
+}
+
+.clear-fix() {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+

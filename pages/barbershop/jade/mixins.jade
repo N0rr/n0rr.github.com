@@ -1,0 +1,28 @@
+//- Js
+  mixin js(path)
+    each val in path
+      - if (~val.indexOf('.js'))
+        script(src = val)
+      - else
+        script(src = val+'.js')
+
+
+//- Bootstrap Slider
+
+//- slider arrow
+
+mixin owl_arrow(_id, _class, content)
+  a(href="#" + _id, class='left carousel-control ' + _class, data-slide='prev')= content
+  a(href="#" + _id, class='right carousel-control ' + _class, data-slide='next')= content
+      
+            
+//- slider indicators
+
+mixin slider_id(number_slide, _class, data_target, value)
+  li(class="indicator " + _class, data-target="#" + data_target, data-slide-to= number_slide)= value 
+
+//-    ul.dignity__indicators.carousel-indicators
+      +dignity_id('0', 'active')
+      +dignity_id('1')
+      +dignity_id('2') 
+//-

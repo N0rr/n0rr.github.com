@@ -1,0 +1,30 @@
+section.form-info
+  div.container
+    div.row
+      -	var pattern = { name: '[A-Za-zА-Яа-яЁё]{1,}'}
+      - var name = {}
+      - name.item1 = {name: "Фамилия", class: 'form-info__l-name'}
+      - name.item2 = {name: "Имя", class: 'form-info__f-name'}
+      - name.item3 = {name: "Отчество", class: 'form-info__m-name'}
+ 
+      div.form-info__full-name
+        each i in name       
+          input(class="form-info__input form-info__name " + i.class, required, type="text", placeholder="" + i.name, pattern="" + pattern.name)
+
+      - var info = {}
+      - info.item1 = {text: "Контактный телефон", class: 'form-info__tel', type: 'text', pattern: '[7-8]\([0-9]{3}\)[0-9]{3}[0-9]{2}[0-9]{2}'}
+      - info.item2 = {text: "Контактный e-mail", class: 'form-info__mail', type: 'email'}
+      
+      div.form-info__contacts
+        each i in info
+          if(i.pattern == undefined) 
+            input.form-info__input.form-info__contact(type="" + i.type, class="" + i.class, required,  placeholder="" + i.text)          
+          else 
+            input.form-info__input.form-info__contact(type="" + i.type, class="" + i.class, required, placeholder="" + i.text, pattern='' + i.pattern)            
+      
+      div.form-info__more-info
+        textarea.form-info__textarea(name="", cols="30", rows="10", placeholder="Доп. информация для мастера")
+      div.form-info__progress-bar
+        div.form-info__success-line
+        span.form-info__success-info 0%
+      
