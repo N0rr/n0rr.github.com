@@ -8,8 +8,9 @@ html
       header.header
       
         - var adLinks={}
-        - adLinks.link1 = {link: 'pages/mishka', text: 'Мишка (адаптив)', img: 'img/mishka.jpg'}
-        - adLinks.link2 = {link: 'pages/barbershop/build/index.html', text: 'Barbershop (адаптив)', img: 'img/barbershop.jpg'}
+        - adLinks.link1 = {link: 'pages/mishka', text: 'Мишка', img: 'img/mishka.jpg'}
+        - adLinks.link2 = {link: 'pages/barbershop/build/index.html', text: 'Barbershop', img: 'img/barbershop.jpg'}
+        - adLinks.link3 = {link: 'pages/pink', text: 'Pink', img: 'img/pink.jpg'}
       
         - var links={}
         - links.link3 = {link: 'pages/ktisis', text: 'Ктисис', img: 'img/ktisis.jpg'}
@@ -19,6 +20,7 @@ html
         - links.link7 = {link: 'pages/Якорь', text: 'Якорь', img: 'img/якорь.jpg'}
         - links.link8 = {link: 'pages/tsun', text: 'Tsun', img: 'img/tsun.jpg'}
         - links.link9 = {link: 'pages/techmart', text: 'Techmart', img: 'img/techmart.jpg'}
+        
         
         ul.ad-list-items
           each link in adLinks

@@ -364,6 +364,10 @@ textarea {
   font: inherit;
   /* 2 */
 }
+@font-face {
+  src: url(../fonts/OpenSans.woff), url(../fonts/OpenSans.woff2);
+  font-family: OpenS;
+}
 .container {
   background: linear-gradient(180deg, #f1f5f7 0%, #A9A9A9 80%) no-repeat;
 }
@@ -401,7 +405,7 @@ textarea {
   color: #000;
   border-bottom: 2px solid #000;
   background: #fff;
-  font-family: monospace;
+  font-family: OpenS;
   font-size: 16px;
 }
 .list-items {
@@ -435,7 +439,7 @@ textarea {
   padding: 2px;
   transition: 0.3s ease-out;
   background: #fff;
-  font-family: monospace;
+  font-family: OpenS;
   font-size: 16px;
 }
 .list-items__link:hover .list-items__text {

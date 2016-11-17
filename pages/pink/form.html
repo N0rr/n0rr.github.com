@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title-->
+    <title>Конкурс</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>   
+    <!-- Header-->
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__block-logo">
+          <picture>
+            <source media="(min-width: 990px)" srcset="img/desktop-logo.svg">
+            <source media="(min-width: 700px)" srcset="img/tablet-logo.svg"><img src="img/mobile-logo.svg" class="header__logo">
+          </picture>
+          <input type="checkbox" id="menu-toggle" class="header__btn-input">
+          <label data-toggle="collapse" data-target="#responsive-menu" role="button" for="menu-toggle" class="header__menu-btn navbar-toggle"></label>
+        </div>
+        <nav class="header__nav navbar">
+          <ul id="responsive-menu" class="header__menu nav navbar-nav collapse navbar-collapse">
+            <li class="header__item"><a href="index.html" class="header__link">Главная</a></li>
+            <li class="header__item"><a href="form.html" class="header__link">Фотографии</a></li>
+            <li class="header__item"><a href="" class="header__link">Конкурс</a></li>
+            <li class="header__item"><a href="" class="header__link">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main-content-->
+    <main>
+      <section class="title-block">
+        <div class="container">
+          <div class="row">
+            <h1 class="title-block__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </div>
+        </div>
+      </section>
+      <section class="share-story"> 
+        <div class="container">
+          <div class="row">
+            <p class="share-story__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="hidden-xs">&zwj; Пожалуйста, заполните форму ниже:</span></p>
+          </div>
+        </div>
+      </section>
+      <form id="" name="" action="" method="" class="form form">
+        <section class="name">
+          <div class="container">
+            <div class="row">
+              <div class="name__input-block">
+                <label for="family-n" class="name__label">Фамилия:</label>
+                <input type="text" name="Фамилия:" placeholder="Укажите фамилию" id="family-n" class="name__input">
+              </div>
+              <div class="name__input-block">
+                <label for="name" class="name__label">Имя:</label>
+                <input type="text" name="Имя:" placeholder="Введите ваше имя" id="name" class="name__input">
+              </div>
+              <div class="name__input-block">
+                <label for="middle-n" class="name__label">Отчество:</label>
+                <input type="text" name="Отчество:" placeholder="Ну и отчество тоже" id="middle-n" class="name__input">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="achieve">
+          <div class="container">
+            <div class="row">
+              <h3 class="achieve__title">Ваши безбашенные достижения в путешествии</h3>
+              <ul class="achieve__items">
+                <li class="achieve__item">          
+                  <div class="achieve__ckeckbox">
+                    <input type="checkbox" name="" id="ach-1" class="achieve__input">
+                    <label for="ach-1" class="achieve__label"></label>
+                  </div><span class="achieve__ac-name">Сделал селфи с акулой</span>
+                </li>
+                <li class="achieve__item">          
+                  <div class="achieve__ckeckbox">
+                    <input type="checkbox" name="" id="ach-2" class="achieve__input">
+                    <label for="ach-2" class="achieve__label"></label>
+                  </div><span class="achieve__ac-name">Обгорел на пляже</span>
+                </li>
+                <li class="achieve__item">          
+                  <div class="achieve__ckeckbox">
+                    <input type="checkbox" name="" id="ach-3" class="achieve__input">
+                    <label for="ach-3" class="achieve__label"></label>
+                  </div><span class="achieve__ac-name">Видел Чака Норриса</span>
+                </li>
+                <li class="achieve__item">          
+                  <div class="achieve__ckeckbox">
+                    <input type="checkbox" name="" id="ach-4" class="achieve__input">
+                    <label for="ach-4" class="achieve__label"></label>
+                  </div><span class="achieve__ac-name">Накупил сувениров</span>
+                </li>
+                <li class="achieve__item">          
+                  <div class="achieve__ckeckbox">
+                    <input type="checkbox" name="" id="ach-5" class="achieve__input">
+                    <label for="ach-5" class="achieve__label"></label>
+                  </div><span class="achieve__ac-name">Удержал башню</span>
+                </li>
+                <li class="achieve__item">          
+                  <div class="achieve__ckeckbox">
+                    <input type="checkbox" name="" id="ach-6" class="achieve__input">
+                    <label for="ach-6" class="achieve__label"></label>
+                  </div><span class="achieve__ac-name">Разгромил Отель</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="contacts-form">
+          <div class="container">
+            <div class="row">
+              <h3 class="contacts-form__title hidden-xs">Контактная информация</h3>
+              <ul class="contacts-form__inputs">
+                <li class="contacts-form__input-block">
+                  <label for="number" class="contacts-form__label">Номерок телефончика</label>
+                  <div class="contacts-form__img"><img src="img/phone.svg" alt="" width="20" height="19"></div>
+                  <input type="text" id="number" name="Номер телефона" placeholder="Номер, пожайлуста" class="contacts-form__input">
+                </li>
+                <li class="contacts-form__input-block">
+                  <div class="contacts-form__img"><img src="img/mail.svg" alt="" width="18" height="13"></div>
+                  <label for="mail" class="contacts-form__label">Адресок почты</label>
+                  <input type="text" id="mail" name="почта" placeholder="E-mail, пожалуйста" class="contacts-form__input">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="type-app">
+          <div class="container">
+            <div class="row">
+              <h3 class="type-app__title">С каким приложением путешествовали ?</h3>
+              <ul class="type-app__items">
+                <li class="type-app__item">
+                  <input type="radio" name="apps" id="Pink для iOS" class="type-app__input">
+                  <label for="Pink для iOS" class="type-app__label">  
+                    <div class="type-app__label-dot"></div>
+                  </label><span class="type-app__app-name">Pink для iOS</span>
+                </li>
+                <li class="type-app__item">
+                  <input type="radio" name="apps" id="Pink на Android" class="type-app__input">
+                  <label for="Pink на Android" class="type-app__label">  
+                    <div class="type-app__label-dot"></div>
+                  </label><span class="type-app__app-name">Pink на Android</span>
+                </li>
+                <li class="type-app__item">
+                  <input type="radio" name="apps" id="Windows Phone" class="type-app__input">
+                  <label for="Windows Phone" class="type-app__label">  
+                    <div class="type-app__label-dot"></div>
+                  </label><span class="type-app__app-name">Windows Phone</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="emotions">
+          <div class="container">
+            <div class="row">
+              <h3 class="emotions__title">Опишите свои эмоции</h3>
+              <div class="emotions__textarea-block">
+                <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="emotions" id="emotion-text" class="emotions__textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="submit">
+          <div class="container">
+            <div class="row">
+              <div class="submit__input-block">
+                <input type="submit" value="Отправить форму" class="submit__input">
+                <div class="submit__info"><span class="submit__star">*</span><span class="submit__txt">&mdash; Обязательные </span><span class="submit__desktop hidden-xs hidden-sm">для заполнения </span><span class="submit__txt">поля</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__items">
+            <picture class="footer__logo">
+              <source media="(min-width: 940px)" srcset="img/footer-logo-desktop.svg"><img src="img/footer-tablet-logo.svg">
+            </picture>
+            <div class="footer__social"><a href="#" class="footer__soc-link">
+                <picture class="footer__soc-img"><img src="img/twitter.svg" height="14" width="18" class="footer__soc-tw"></picture></a><a href="#" class="footer__soc-link">
+                <picture class="footer__soc-img"><img src="img/facebook.svg" height="18" width="9" class="footer__soc-fc"></picture></a><a href="#" class="footer__soc-link">
+                <picture class="footer__soc-img"><img src="img/youtube.svg" height="13" width="15" class="footer__soc-you"></picture></a>
+            </div><a href="https://htmlacademy.ru/" class="footer__dev-by"><span class="footer__dev-text">Разработано</span><img src="img/htmlacademy.svg" height="34" width="27"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--java-Script in footer    -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js">      </script>
+  </body>
+</html>
