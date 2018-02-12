@@ -1,8 +1,8 @@
 .dignity { 
   .flex();    
   position: relative;  
-  background: @color-4 url(../img/dignity.svg)no-repeat 50% 50%; 
-  background-size: cover;   
+  background: @color-4; 
+  background-size: cover;  
   margin-bottom: 30px;  
   &:after {
     content: '';
@@ -93,8 +93,7 @@
 
 
 @media @tablet-width {
-  .dignity {
-    background: @item-3 url(../img/dignity-tablet.svg)no-repeat 50%;
+  .dignity {    
     background-size: cover;
     padding-top: 50px;
     &:after {
@@ -125,6 +124,8 @@
   }
   
   .dignity__img {
+    display: block;
+    width: auto;
     margin: 0;
     margin-right: 5.7%;
   }

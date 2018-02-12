@@ -1,0 +1,135 @@
+.cons {
+  background: linear-gradient(to top, #d3a47c, #c09675);
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.cons__title {  
+  padding: 0;
+  @include center();
+  text-align: center;
+  margin-top: 12px;
+  font-size: $h2-desktop;
+  font-family: $font-1;
+  text-transform: uppercase;
+  color: $color-1;
+  letter-spacing: -0.4px;
+  border-bottom: 3px solid $color-5;
+  border-radius: 1px;
+  width: 680px;
+}
+
+.cons__form-block {
+  @include center();
+  background: #fff;
+  width: 1063px;  
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 42px;
+  border-radius: 4px;
+  box-shadow:     
+    -10px 10px 0px  0px #b78a68, 
+    10px 10px 0px 0px #b78a68;
+}
+
+.cons__status {
+  @include flex-row();
+  align-items: center; 
+}
+
+.cons__status--full-name {
+  margin-top: 35px;
+}
+
+.cons__icon {
+  background: $color-6;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.cons__form {
+  @include flex();
+  width: 100%;
+}
+
+.cons__status-text {
+  color: $color-6;
+  font-size: 14px;
+  font-family: $font-2-m; 
+}
+
+.cons__full-name-input {
+  @include input-form();   
+}
+
+.cons__numbers {
+  margin-top: 10px;
+  @include flex-row();
+  justify-content: space-between; 
+}
+
+.cons__phone {
+  @include flex();
+  flex-direction: column-reverse;
+}
+
+.cons__phone-input {
+  @include input-form();
+  width: 490px;  
+  margin-right: 20px;
+  
+  
+} 
+
+.cons__time {
+  @include flex-row();
+  flex-wrap: wrap;
+}
+
+.cons__time-status {
+  width: 500px;
+}
+
+.cons__time input {
+  display: none;
+}
+
+.cons__time-from {
+  @include input-form();  
+  margin-right: 20px;
+  width: 248px;
+  text-align: center;
+  padding-left: 0; 
+  cursor: pointer;
+}
+
+.cons__time-to {
+  @include input-form();
+  width: 248px;
+  padding-left: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cons__time input:checked + label {
+  border: 1px solid $color-3;
+  box-shadow: inset 0px 0px 0px 1px $color-3;
+}
+
+.cons__submit {    
+  width: 377px;
+  @include center();
+  margin-top: 44px;
+  background: $color-6;
+  color: #fff;
+  font-family: $font-1;
+  font-size: $h2-desktop;
+  border: none;
+  border-radius: 4px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  text-align: center;
+  align-items: center;
+}

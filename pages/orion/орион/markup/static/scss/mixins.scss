@@ -1,0 +1,208 @@
+// Mixins.
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+// You can add your own mixins here:
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+// $name - название для font-family
+// $path - путь к шрифту без формата
+// $weight - font-weight
+// $style - font-style
+// $exts - форматы шрифта, которые используются
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (
+        eot: "?",
+        svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+
+@mixin clearfix {
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin center() {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+// Flex
+
+@mixin flex-row() {  
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex() {  
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Fonts //////////////
+
+// Text
+
+@mixin text($size: 18px, $color: #fff, $line: auto, $weight: 400) {
+  font-family: $font-1, Arial, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: $line;
+}
+
+@mixin text-bold($size: 18px, $color: #fff, $line: auto, $weight: 400) {
+  font-family: $font-1-bold, Arial, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: $line;
+}
+
+@mixin text-l($size: 18px, $color: #fff, $line: auto, $weight: 400) {
+  font-family: $font-1-light, Arial, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: $line;
+}
+
+
+@mixin input-form() {
+  background: $color-7;
+  border: 1px solid $color-5;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding-left: 29px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  font-size: 20px;
+  color: rgba(0,0,0, 1);
+  font-family: $font-2-l; 
+}
+
+@mixin title() {
+  @include center();  
+  font-family: $font-1;
+  font-size: $h2-desktop;
+  color: $color-1;
+  border-bottom: 10px double $color-9;
+}
+
+@mixin ui-range() {
+  height: 2px;
+  border: none;
+  background: $color-9;
+  width: 100%;
+  & .ui-slider-handle {
+    border-radius: 50%;
+    border: 2px solid $color-9;
+    background: #fff;
+    height: 13px;
+    width: 13px;
+    top: -8px;
+    cursor: pointer;
+  }
+  & .ui-slider-range {
+    margin-top: -5px;
+    height: 10px;
+  }
+  & .ui-state-hover {
+    border-color: $color-3;
+    background: $color-3;
+  }
+  & .ui-state-active {
+    border-color: $color-3;
+    background: $color-3;
+  }
+  & .price__asp--active {
+    border-color: $color-3;
+    background: $color-3;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

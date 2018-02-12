@@ -1,0 +1,84 @@
+include /price-checkbox/price-checkbox
+include /priceSelect/priceSelect
+mixin price(data)
+    section.price
+      form(action="")
+        h2.price__title Калькулятор предварительного расчета стоимости укладки Асфальта
+        div.price__items-container
+          ul.price__items-type
+            each item, n in price
+              li.price__type
+                -if(item.cls != undefined)
+                  input.price__type-input(class='price__type-input--#{item.cls}',type="radio", name='тип укладки грунта', id='#{item.title}', value='#{item.title}')
+                -if(item.cls == undefined)
+                  input.price__type-input(type="radio", name='тип укладки грунта', id='#{item.title}', value='#{item.title}')
+                label.price__type-checkbox(for="#{item.title}")                
+                  div.price__type-img
+                    div.price__type-img-inset
+                    img(class='price__icon-#{n} price__type-icon', src="%=static=%img/content/#{n}.jpg", height='64', width='64')
+                  span.price__type-name= item.title                
+          ul.price__items-block
+            each item, n in price
+              li.price__item-block(id='#{n}')
+                div.price__type-block
+                  -if(item.sky != undefined)
+                    div.price__sky
+                  -if(item.asphalt != undefined)
+                    div.price__asphalt                       
+                  -if(item.concrete != undefined)
+                    div.price__concrete
+                  -if(item.screed != undefined)                    
+                    div.price__screed   
+                  -if(item.macadam != undefined)
+                    div.price__macadam                          
+                  -if(item.sand != undefined)
+                    div(class='price__sand price__sand-#{item.sand}')
+                  -if(item.his != undefined)
+                    div.price__his-bg                    
+                div.price__info-block
+                  h1.price__info-title(title='#{item.title}')= item.title
+                  -if(item.asphaltTop != undefined)
+                    div.price__asphalt-range-block
+                      label.price__asphalt-top-title(for="Асфальт верхний слой") Асфальт верхний слой       
+                      div.price__asp-value-block
+                        input.price__input-just-asp(type="text", id='Асфальт верхний слой', name='Просто асфальтирование', value='0', disabled)
+                      div.price__asphalt-range
+                        div.ui-slider-range
+                        span.ui-slider-handle.price__asp-range
+                    div.price__asphalt-top
+                  -if(item.text1 || item.text2 != undefined)
+                    p.price__info-text= item.text1 
+                    p.price__info-text= item.text2
+                  -if(item.text3 != undefined)
+                    p.price__info-text= item.text3                
+                  -if(item.his != undefined)    
+                    div.price__his        
+                      ul.price__ranges
+                        each range in inputRange   
+                          li.price__input-item
+                            label.price__input-ttl(for='#{range.ttl}')= range.ttl 
+                            div.price__input-value
+                              -if(range.required == undefined)
+                                input.price__value-number(class='price__#{i}', type="text", name='#{range.ttl}', id='#{range.ttl}', value='#{range.val}', readonly)
+                              -if(range.required != indefined)
+                                input.price__value-number(type="text", name='#{range.ttl}', id='#{range.ttl}', value='#{range.val}' readonly, required)
+                            div.price__in  
+                              div.ui-slider-range
+                              span.ui-slider-handle
+                          
+                 
+                            
+        +priceSelect()
+        
+        ul.price__more-option
+          +price-checkbox(item1)
+          +price-checkbox(item2)
+          +price-checkbox(item3)
+          li.price__asphalt-area
+            label.price__asp-area-ttl(for="площадь асфальтируемой поверхности") Укажите площадь всей асфальтируемой поверхности
+            input.price__asp-area-input(type="text", name='площадь асфальтируемой поверхности', id='площадь асфальтируемой поверхности', pattern='^[ 0-9]+$', required, placeholder!='450...........................................м&sup2;')
+          li.price__submit-item
+            input.price__submit(type="submit", value='ПОЛУЧИТЬ СМЕТУ')
+            
+            
+          

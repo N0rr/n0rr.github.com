@@ -1,0 +1,35 @@
+.banner {
+  background: linear-gradient(to bot, #c09675, #d3a47c);
+  background: $color-2 url(%=static=%/content/banner.jpg)repeat 50%;
+  height: 438px;
+  width: 100%;
+  min-width: 100%;
+}
+
+.banner__info {
+  @include center();  
+  width: 700px; 
+  padding-top: 57px;  
+}
+
+.banner__title {   
+  padding: 0;
+  margin: 0;
+  font-size: $h1-desktop;
+  font-family: $font-1;
+  letter-spacing: -0.8px;
+  color: $color-1;
+  text-align: center;
+  padding-right: 7px;
+}
+
+.banner__text {
+  font-size: 16px;
+  width: 600px;  
+  text-align: center;
+  color: $color-4;
+  font-family: $font-2-l;
+  padding: 0;  
+  margin: 0 auto;
+  margin-top: 3px;
+}

@@ -1,0 +1,49 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+
+$mobile-width: '(min-width: 320px)';
+$tablet-width: '(min-width: 600px)';
+$desktop-width:'(min-width: 960px)';
+$slider-width: '(min-width: 1399px)';
+$retina-1: '(min-resolution: 144dpi)';
+$retina-2: '(min-resolution: 1.5dppx)';
+$retina: $retina-1, $retina-2;
+
+$min-mobile: 320px;
+$min-tablet: 600px;
+$min-desktop: 960px;
+
+$max-mobile: 480px;
+$max-tablet: 700px;
+$max-desktop: 980px;
+
+$desktop-wrap: 960px;
+$tablet-wrap: 640px;
+$mobile-wrap: 260px;
+
+
+// active colors
+
+$color-1: #436276;
+$color-2: #d2f0fd;
+$color-3: #7cc15e;
+$color-4: #282828;
+$color-5: #c6d0d6;
+$color-6: #e27d65;
+$color-7: #e5e5e5;
+$color-8: #c79b78;
+$color-9: #b4c0c8;
+
+$mobile-menu-txt: 20px;
+
+$h1-mobile: 24px;
+$h2-mobile: 18px;
+$h3-mobile: 14px;
+
+$h1-tablet: 50px;
+$h2-tablet: 24px;
+  
+$h1-desktop: 40px;
+$h2-desktop: 30px;
+
+$h1-tablet-line: 50px;

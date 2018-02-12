@@ -1,0 +1,60 @@
+.select {
+  @include center();
+  margin-top: 7px;
+  background: #fff;
+  box-shadow: 
+    0px -1px 10px rgba(0,0,0, 0.2),
+    9px 9px 0px $color-7,
+    -9px 9px 0px $color-7;
+  width: 1100px;
+  border-radius: 4px;  
+}
+
+.select__title {
+  @include center();
+  width: 450px;
+  font-size: 20px;
+  font-family: $font-1;
+  color: $color-1;
+  letter-spacing: -0.4px;
+  padding-top: 20px;
+  border-bottom: 3px solid $color-7;  
+  text-align: center;
+}
+
+.select__text {
+  font-family: $font-2-l-italic;
+  color: $color-1;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.select__phone {
+  @include center();
+  font-family: $font-1;
+  font-size: 30px;
+  background: $color-3;
+  margin-top: 20px;  
+  width: 262px;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 4px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.select__info {
+  background: $color-1;
+  font-family: $font-1;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}

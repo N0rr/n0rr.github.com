@@ -58,7 +58,7 @@ window.addEventListener('resize', checkSlider);
 
 
 var priceSlider = function() {
-
+  document.querySelector('.reviews__indicators').style.display = 'flex';
   $(document).ready(function () {
     $(".reviews__prev").click(function () {
         owl.trigger("prev.owl");
@@ -66,7 +66,7 @@ var priceSlider = function() {
     $(".reviews__next").click(function () {
         owl.trigger("next.owl");
     });
-
+    
     var owl = $(".reviews__items");
     owl.owlCarousel({
       items: 1,

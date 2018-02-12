@@ -1,0 +1,28 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page {
+  width: 100%;
+}
+
+.page__header {
+  width: 100%;
+  background: $color-2;
+  min-width: 1100px;
+}
+
+.page__wrapper {
+  min-height: 100%;  
+  min-width: 1100px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}

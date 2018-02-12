@@ -1,0 +1,24 @@
+mixin consultation(data)
+    section.cons
+      div.cons__form-block
+        h2.cons__title Получите бесплатную консультацию специалиста      
+        form.cons__form(action="/")          
+          div.cons__status.cons__status--full-name
+            div.cons__icon--full-name.cons__icon
+            label.cons__full-name.cons__status-text(for="full-name") Представьтесь пожайлуста
+          input.cons__full-name-input.cons__status-text(type="text", placeholder='Ф.И.О', name='full-name', required)
+          div.cons__numbers
+            div.cons__phone
+              input.cons__phone-input(type="tel", name='client-phone', id='client-phone', placeholder='+7 - ... - .. - ..', required)
+              div.cons__status              
+                div.cons__icon--phone.cons__icon
+                label.cons__phone-status.cons__status-text(for="client-phone") Ваш контактный номер
+            div.cons__time
+              div.cons__status
+                div.cons__icon--time.cons__icon
+                div.cons__time-status.cons__status-text Выберите удобное для вас время
+              input.cons__time-from-input(type="radio", name='cons-time', id='cons__time-9-13',required, value='с 9.00 до 13.00')
+              label.cons__time-from(for="cons__time-9-13") с 9.00 до 13.00
+              input.cons__time-to-input(type="radio", id='cons__time-14-18', name='cons-time', value='с 14.00 до 18.00')
+              label.cons__time-to(for="cons__time-14-18") с 14.00 до 18.00
+          input.cons__submit(type="submit", value='ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ')      

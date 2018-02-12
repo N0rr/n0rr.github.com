@@ -1,0 +1,19 @@
+mixin items(data)
+    section.items
+      each card in items
+        article.items__card
+          a.items__link(href="#")
+            div.items__card-ttl
+              img.items__card-avatar(src="%=static=%img/content/#{card.img}.jpg", width='50', height='50' alt="avatar")
+              span.items__card-name= card.name
+            div.items__card-bg
+              div.items__card-img-shadow                                
+              img.items__card-img(src="%=static=%img/content/#{card.bg}.jpg", width='240', height='160', alt="bg")     
+              div.items__card-price
+                span.items__card-value= card.price
+                span.items__card-valuta!= card.valuta
+            p.items__card-info= card.info
+            
+            
+          
+   

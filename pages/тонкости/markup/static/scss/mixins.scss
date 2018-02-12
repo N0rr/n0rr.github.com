@@ -1,0 +1,157 @@
+// Mixins.
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+// You can add your own mixins here:
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+// $name - название для font-family
+// $path - путь к шрифту без формата
+// $weight - font-weight
+// $style - font-style
+// $exts - форматы шрифта, которые используются
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (
+        eot: "?",
+        svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+
+@mixin clearfix {
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin center() {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+// Flex
+
+@mixin flex-row() {  
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex() {  
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Fonts //////////////
+
+// Text
+
+//@mixin text($size: 18px, $color: #fff, $line: auto, $weight: 400) {
+//  font-family: $font-1, Arial, sans-serif;
+//  font-weight: $weight;
+//  font-size: $size;
+//  color: $color;
+//  line-height: $line;
+//}
+
+//@mixin text-bold($size: 18px, $color: #fff, $line: auto, $weight: 400) {
+//  font-family: $font-1-bold, Arial, sans-serif;
+//  font-weight: $weight;
+//  font-size: $size;
+//  color: $color;
+//  line-height: $line;
+//}
+//
+//@mixin text-l($size: 18px, $color: #fff, $line: auto, $weight: 400) {
+//  font-family: $font-1-light, Arial, sans-serif;
+//  font-weight: $weight;
+//  font-size: $size;
+//  color: $color;
+//  line-height: $line;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

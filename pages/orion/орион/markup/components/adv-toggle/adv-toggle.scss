@@ -1,0 +1,46 @@
+.adv-toggle {
+  background: #d3a47c;
+  padding-bottom: 20px;
+}
+.adv-toggle__arrow-block {
+  @include center();
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border: 2px solid #fff;
+  border-radius: 50%;  
+}
+
+.adv__toggle__arrow {
+  @include flex();
+  position: relative;
+  justify-content: center;
+  align-items: center;  
+  height: 35px;
+  width: 35px;
+}
+
+.adv__toggle__left {  
+  position: absolute;
+  background: #fff;
+  width: 15px;
+  height: 3px;
+  transform: rotate(45deg);
+  border-radius: 6px;
+  right: 15px;
+  top: 17px;
+}
+
+.adv__toggle__right {
+  position: absolute;
+  background: #fff;
+  width: 15px;
+  height: 3px;
+  transform: rotate(-45deg);
+  border-radius: 6px;
+  left: 15px;
+  top: 17px;
+}
+
+

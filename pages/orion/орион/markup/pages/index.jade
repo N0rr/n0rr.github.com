@@ -1,0 +1,52 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    
+    include ../components/banner/banner
+    include ../components/consultation/consultation 
+    include ../components/advantages/advantages
+    include ../components/price/price
+    include ../components/objects/objects
+    include ../components/news/news
+    include ../components/faq/faq
+    include ../components/map/map
+    
+    include ../components/footer/footer
+
+    head
+        link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        link(rel="stylesheet" href="/resources/demos/style.css")
+        +head(head.defaults)        
+    body.page
+        |%=symbols=%
+
+        .page__header
+          +header()          
+        main.page__wrapper
+          +banner()
+          +consultation()          
+          +advantages()
+          +price()
+          +objects()
+          +news()
+          +faq()
+          +map()
+
+            //- Include your components here
+            
+
+            .page__buffer
+
+        .page__footer
+            +footer()
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+                
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")        
+        script(src='%=static=%js/separate-js/common.js')        

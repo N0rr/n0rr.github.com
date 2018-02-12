@@ -1,0 +1,148 @@
+.news {
+  @include flex();
+  background: url(%=static=%/content/price__fon1.png);  
+  padding-bottom: 70px;
+}
+
+.news__title {
+  @include title();
+  width: 270px;
+  margin-top: 64px;
+}
+
+.news__read-all-news {
+  @include center();
+  width: 270px;
+  text-align: center;
+  color: $color-1;
+  margin-top: 2px;
+  font-family: $font-2-l-italic;
+}
+
+.news__container {
+  @include flex-row();  
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 38px;  
+  width: 1100px;
+}
+
+.news__last-news {
+  box-shadow: 0px 0px 13px 1px rgba(0,0,0, 0.2);
+  background: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 530px;
+  &:hover .news__ls-news-text {
+    color: $color-3;
+  }
+}
+
+.news__ls-news-img {
+  height: 324px;
+}
+
+.news__ls-news-info {
+  @include flex-row();
+  background: #fff;  
+  padding: 9px; 
+}
+
+.news__ls-news-date {
+  @include flex();  
+  margin-left: 10px;
+}
+
+.news__ls-news-day,
+.news__ls-news-year,
+.news__ls-news-text{
+  font-family: $font-1;
+  font-size: 18px;
+  color: $color-3;
+}
+
+.news__ls-news-day {
+  text-align: center;
+}
+
+.news__ls-news-year {  
+  text-align: center;
+}
+
+.news__ls-news-text {
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 3px solid $color-3;
+  font-size: 20px;  
+  color: $color-1;
+  transition: all 0.2s;
+}
+
+.news__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 532px;
+}
+
+.news__item:nth-of-type(2n) {
+  margin-top: 31px;
+}
+
+.news__item-link {
+  @include flex-row();
+  flex-wrap: wrap;
+  border-radius: 4px;
+  border: 2px solid #dcdcdc;
+  text-decoration: none;
+  background: #fff;
+  height: 176px;
+  transition: all 0.3s;  
+  &:hover {
+    border-color: $color-3;
+  }
+  &:hover .news__item-title {
+    color: $color-3;
+  }
+}
+
+
+.news__item-img {
+  padding: 9px;
+}
+
+.news__item-info {
+  width: 380px;
+  padding-top: 5px;
+  margin-left: 7px;  
+}
+
+.news__item-date {
+  display: inline-block;
+  font-family: $font-1;
+  font-size: 19px;
+  color: $color-3;
+  border-bottom: 3px solid $color-3;
+  letter-spacing: 0.6px;
+}
+
+.news__item-title {
+  font-family: $font-1;
+  font-size: 20px;
+  color: $color-1;
+  margin-top: 6px;
+  transition: all 0.2s;
+}
+
+.news__item-text {  
+  margin: 0;
+  margin-top: 1px;
+  font-family: $font-2-l-italic;
+  background: #e3e8eb;
+  color: $color-1;
+  padding: 15px;
+  padding-left: 18px;
+  padding-right: 12px;  
+  letter-spacing: 0.3px;
+}
+

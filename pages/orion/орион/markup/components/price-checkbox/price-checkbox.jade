@@ -1,0 +1,15 @@
+mixin price-checkbox(data)
+    li.price-checkbox
+      label.price__m-opt-ttl= data.ttl
+      div.price__m-opt-item(class='price__m-opt-#{data.cls}')
+        each item in data
+          -if(item.name != undefined && item.checkbox == undefined)        
+            input.price__checkbox(type='radio',name='#{item.name}', id='#{item.id1}', value='#{item.id1}')
+            label.price__checkbox-label(for="#{item.id1}")
+              div.price__checkbox-icon
+              div.price__checkbox-text(class='#{item.not}')= item.id1
+          -if(item.checkbox != undefined)        
+            input.price__checkbox(type='radio',name='#{item.name}', id='#{item.id1}', value='#{item.id1}' checked, reqired)
+            label.price__checkbox-label(for="#{item.id1}")
+              div.price__checkbox-icon
+              div.price__checkbox-text(class='#{item.not}')= item.id1

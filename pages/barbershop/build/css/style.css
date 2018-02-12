@@ -749,7 +749,7 @@ textarea {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: #242424 url(../img/dignity.svg) no-repeat 50% 50%;
+  background: #242424;
   background-size: cover;
   margin-bottom: 30px;
 }
@@ -1293,6 +1293,9 @@ textarea {
   line-height: 24px;
   margin-bottom: 21px;
 }
+.price__item {
+  display: block;
+}
 .price__type {
   font-family: PTSansBold, Arial, sans-serif;
   font-weight: 400;
@@ -1696,7 +1699,7 @@ textarea {
     margin-top: 0;
   }
   .footer__address {
-    width: 321px;
+    width: 323px;
     text-transform: none;
     margin-bottom: 0;
   }
@@ -1798,7 +1801,6 @@ textarea {
     font-size: 20px;
   }
   .dignity {
-    background: #353535 url(../img/dignity-tablet.svg) no-repeat 50%;
     background-size: cover;
     padding-top: 50px;
   }
@@ -1826,6 +1828,8 @@ textarea {
     border-bottom: 1px solid #4a4a4a;
   }
   .dignity__img {
+    display: block;
+    width: auto;
     margin: 0;
     margin-right: 5.7%;
   }
@@ -2149,6 +2153,7 @@ textarea {
     display: table-row;
   }
   .price__item {
+    display: table-cell;
     border: 1px solid #4a4a4a;
     padding: 15px;
   }
@@ -2628,7 +2633,6 @@ textarea {
   }
   .clients__img {
     width: 294px;
-    height: 294px;
   }
   .clients__client {
     flex-direction: column;

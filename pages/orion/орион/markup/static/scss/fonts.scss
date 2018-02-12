@@ -1,0 +1,32 @@
+/* Your custom fonts here */
+@include font-face('franklin', '../fonts/FranklinGothicMediCondITC W08', normal, italic, $exts: woff woff2);
+@include font-face('roboto-l', '../fonts/Roboto Light V2', normal, italic, $exts: woff woff2);
+@include font-face('roboto-l-italic', '../fonts/Roboto Light Italic V2', normal, italic, $exts: woff woff2);
+@include font-face('roboto-m', '../fonts/Roboto Medium V1', normal, italic, $exts: woff woff2);
+@include font-face('roboto', '../fonts/Roboto Regular V2', normal, italic, $exts: woff woff2);
+
+
+
+
+$font-1: franklin , Helvetica, Arial, sans-serif;
+$font-2: roboto , Helvetica, Arial, sans-serif;
+$font-2-l: roboto-l , Helvetica, Arial, sans-serif;
+$font-2-l-italic: roboto-l-italic , Helvetica, Arial, sans-serif;
+$font-2-m: roboto-m , Helvetica, Arial, sans-serif;
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/

@@ -1,0 +1,17 @@
+mixin advantages(data)
+    section.advg      
+      div.advg__toggle(for="adv-toggle")
+        div.advg__toggle-arrow-block      
+          div.advg__toggle-arrow
+            div.advg__toggle-left
+            div.advg__toggle-right
+      div.advg__toggled 
+        h2.advg__title НАШИ ПРЕИМУЩЕСТВА
+        ul.advg__items
+          each item in advg
+            li.advg__item    
+              div.advg__img-block
+                div(class='#{item.cls}')
+              span.advg__item-text!= item.text
+      
+      

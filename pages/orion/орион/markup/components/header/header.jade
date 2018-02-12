@@ -1,0 +1,8 @@
+include /site-menu/site-menu
+mixin header(data)
+    header.header
+      div.header__logo
+        img(src="%=static=%img/minified-svg/logo.svg", width='79', height='72', alt="")
+      +site-menu(menu, 'header')
+      a.header__phone(href="tel:+78137777777") +7 913 777 77 77
+        

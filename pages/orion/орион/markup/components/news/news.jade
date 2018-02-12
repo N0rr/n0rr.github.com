@@ -1,0 +1,24 @@
+mixin news(data)
+    section.news
+      h2.news__title НОВОСТИ КОМПАНИИ
+      a.news__read-all-news(href="#") Читать все новости
+      div.news__container
+        a.news__last-news(href="#")
+          div.news__ls-news-img
+            img(src="%=static=%img/content/last-news.jpg", alt="")
+          div.news__ls-news-info
+            div.news__ls-news-date
+              div.news__ls-news-day 20.10.
+              div.news__ls-news-year 2016
+            div.news__ls-news-text Новый законченный объект, готовый к использованию
+        ul.news__list
+          each item in news
+            li.news__item      
+              a.news__item-link(href="#")
+                img.news__item-img(src="%=static=%img/content/#{item.img}.jpg", width='106', height='79', alt="")
+                div.news__item-info
+                  div.news__item-date= item.date
+                  div.news__item-title= item.title
+                p.news__item-text= item.text
+              
+          

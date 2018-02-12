@@ -1,0 +1,73 @@
+.price-checkbox {
+  @include flex();  
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.price__m-opt-ttl {
+  font-size: 20px;
+  color: $color-3;
+  font-family: $font-1;  
+  margin-bottom: 20px;
+}
+
+.price__m-opt-item-1 {
+ width: 260px;
+}
+
+.price__m-opt-item-2 {
+  @include flex-row();
+  flex-wrap: wrap;
+  width: 730px;
+}
+
+.price__m-opt-item-2 .price__checkbox-label {
+  width: 50%;
+}
+
+.price__checkbox {
+  display: none;
+}
+
+.price__checkbox:hover + label .price__checkbox-icon {
+  border-color: $color-3;
+}
+
+.price__checkbox:checked + label .price__checkbox-icon {
+  border-color: $color-3;
+  background: $color-3;
+  color: $color-1;
+}
+
+.price__checkbox:checked + label .price__not-active {
+  color: $color-1;
+}
+
+.price__checkbox-label {
+  @include flex-row();
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+
+.price__checkbox-icon {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid $color-9;
+  margin-right: 10px;  
+}
+
+.price__checkbox-text {
+  font-size: 16px;
+  font-family: $font-2-l;
+  color: $color-1;
+}
+
+.price__not-active {
+  color: $color-9;
+}
+
+
+
+

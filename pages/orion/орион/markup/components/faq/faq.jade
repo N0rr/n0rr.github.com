@@ -1,0 +1,15 @@
+mixin faq(data)
+    section.faq
+      h2.faq__title ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+      div.faq__list-container
+        ul.faq__list(id='accordion')
+          each item in faq
+            li
+              h3.faq__item
+                div.faq__item-btn   
+                  div.faq__toggle
+                    div.faq__toggle-arrow
+                      div.faq__toggle-left
+                      div.faq__toggle-right
+                  div.faq__item-title= item.title                
+              p.faq__text= item.text

@@ -1,0 +1,5 @@
+mixin site-menu(data, cls)
+    ul(class='#{cls}__menu')       
+      each link in data
+        li(class='#{cls}__item')
+          a(class='#{cls}__link', href="#{link.link}")= link.text

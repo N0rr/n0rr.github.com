@@ -1405,7 +1405,7 @@ textarea {
   }
   .offer__item-txt {
     text-align: left;
-    width: auto;
+    width: 100%;
     letter-spacing: 0.35px;
     margin-bottom: 0;
   }

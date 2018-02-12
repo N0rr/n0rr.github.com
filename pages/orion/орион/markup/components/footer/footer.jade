@@ -1,0 +1,19 @@
+include /site-menu/site-menu
+mixin footer(data)
+    footer.footer
+      div.footer__items-wrapper
+        ul.footer__items
+          li.footer__logo
+            img(src="%=static=%img/minified-svg/logo.svg", width='88', height='88', alt="")
+          li.footer__item-menu
+            +site-menu(menu, 'footer')
+          li.footer__phone 
+            a(href="tel:+79137777777") +7 913 777 77 77
+      div.footer__dev-by
+        div.footer__dev-by-wrapper
+          p.footer__dev-info Все права защищены. 2016 г. При копировании материалов ссыдка обязательна.
+          a.footer__dev-link(href="#")
+            span.footer__dev-link-text Разработка сайта 
+            span.footer__dev-link-symbol -
+            img.footer__dev-img(src="%=static=%img/content/ae-logo.png", width="92", height="21", alt="AE-Studio")
+            

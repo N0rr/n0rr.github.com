@@ -1,0 +1,13 @@
+mixin objects(data)
+    section.objects
+      h2.objects__title ОБЪЕКТЫ
+      a.objects__show-all(href="#") Смотреть все
+      ul.objects__items
+        each item in objects
+          li.objects__item
+            div.objects__zoom
+              div.objects__zoom-img
+                img.objects__img(src="%=static=%img/content/#{item.img}.jpg", width='330', height='246' alt="")
+              div.objects__name= item.name
+            p.objects__text= item.text
+            a.objects__link(href="#{item.link}") ПОДРОБНЕЕ
