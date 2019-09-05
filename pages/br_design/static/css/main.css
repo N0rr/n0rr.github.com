@@ -2899,6 +2899,9 @@ html, body {
 @media screen and (min-width: 1280px) {
   .design__slider {
     position: relative;
+    top: auto;
+    left: auto;
+    display: block;
     height: 37.5rem;
   }
 }
