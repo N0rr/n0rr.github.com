@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Главная</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="static/css/separate-css/jquery-ui.min.css">
+
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <picture class="header__logo">
+            <source media="(min-width: 1280px)" srcset="static/img/content/logo.png" />
+            <img src="static/img/content/bottom-logo.png" alt="" role="presentation" />
+        </picture>
+        <a class="header__phone" href="tel: +88008234888">+7 (800) 823 48 88</a>
+        <div class="slide-menu slide-menu slide-menu_desk js-menu slide-menu slide-menu_static scroll-to-container-js slide-menu slide-menu_custom">
+            <div class="slide-menu__menu-btn js-menu-btn">
+                <div class="slide-menu__bar slide-menu__bar-1">
+                </div>
+                <div class="slide-menu__bar slide-menu__bar-2">
+                </div>
+                <div class="slide-menu__bar slide-menu__bar-3">
+                </div>
+            </div>
+            <div class="slide-menu__menu">
+                <div class="slide-menu__block">
+                    <a class="scrollto scroll-link-js swiper-scrollto-js slide-menu__link" href="/design" data-link="design"
+                    data-slide="0">Главная</a>
+                    <a class="scrollto scroll-link-js swiper-scrollto-js slide-menu__link" href="/offer" data-link="offer"
+                    data-slide="1">Преимущества</a>
+                    <a class="scrollto scroll-link-js swiper-scrollto-js slide-menu__link" href="/portfolio"
+                    data-link="portfolio" data-slide="2">Портфолио</a>
+                    <a class="scrollto scroll-link-js swiper-scrollto-js slide-menu__link" href="/our-services"
+                    data-link="our-services" data-slide="3">Наши услуги</a>
+                    <a class="scrollto scroll-link-js swiper-scrollto-js slide-menu__link" href="/clients-feedback"
+                    data-link="clients-feedback" data-slide="6">Отзывы</a>
+                    <a class="scrollto scroll-link-js swiper-scrollto-js slide-menu__link" href="/order" data-link="order"
+                    data-slide="5">Контакты</a>
+                    <div class="slide-menu__socials flex row-between">
+                        <a class="slide-menu__social flex align-center" href="javascript:void(0)">
+                            <img class="slide-menu__vk" src="static/img/content/vk.png" alt="" role="presentation" />
+                        </a>
+                        <a class="slide-menu__social" href="javascript:void(0)">
+                            <img class="slide-menu__insta" src="static/img/content/insta.png" alt="" role="presentation" />
+                        </a>
+                        <a class="slide-menu__social" href="javascript:void(0)">
+                            <img class="slide-menu__fb" src="static/img/content/fb.png" alt="" role="presentation" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="b-page">
+        <div class="swiper-slider swiper-container swiper-slider swiper-slider_fullpage" id="swiper-page">
+            <div class="swiper-slider__wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="design container" id="design">
+                        <div class="design__block">
+                            <div class="design__baner">
+                                <h1 class="design__title b-page__title">Дизайн интерьеров
+                                </h1>
+                                <div class="design__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.
+                                </div>
+                                <a class="btn btn_orange design__btn" href="javascript:void(0)">Заказать Дизайн</a>
+                                <a class="scrollto scroll-link-js design__link-arrow" href="/offer" data-link="offer">
+                                    <img class="scrollto__arrow design__arrow" src="static/img/content/arrow-bot.png" alt=""
+                                    role="presentation" />
+                                </a>
+                                <div class="design__socials flex row-between">
+                                    <a class="design__social flex align-center" href="javascript:void(0)">
+                                        <img class="design__vk" src="static/img/content/vk.png" alt="" role="presentation" />
+                                    </a>
+                                    <a class="design__social" href="javascript:void(0)">
+                                        <img class="design__insta" src="static/img/content/insta.png" alt="" role="presentation"
+                                        />
+                                    </a>
+                                    <a class="design__social" href="javascript:void(0)">
+                                        <img class="design__fb" src="static/img/content/fb.png" alt="" role="presentation" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="owl-slider owl-carousel design__slider" id="design-slider">
+                                <div class="owl-slider__slide design__slide">
+                                    <img class="owl-slider__img design__slide-img" src="static/img/content/head-slide1.jpg" alt=""
+                                    role="presentation" />
+                                </div>
+                                <div class="owl-slider__slide design__slide">
+                                    <img class="owl-slider__img design__slide-img" src="static/img/content/head-slide1.jpg" alt=""
+                                    role="presentation" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="offer container" id="offer">
+                        <div class="offer__item">
+                            <div class="offer__number">01
+                            </div>
+                            <div class="offer__title">Берем весь ремонт
+                                <br/>на себя
+                            </div>
+                            <p class="offer__info">
+                                Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом
+                            </p>
+                        </div>
+                        <div class="offer__item">
+                            <div class="offer__number">02
+                            </div>
+                            <div class="offer__title">Мы - профессионалы
+                                <br/>своего дела
+                            </div>
+                            <div class="offer__info">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и тренинги а студия уже реализовала
+                                свыше 1000 дизайн-проектов
+                            </div>
+                        </div>
+                        <div class="offer__item">
+                            <div class="offer__number">03
+                            </div>
+                            <div class="offer__title">
+                                Наши проекты
+                                <br/>индивидуальны
+                            </div>
+                            <p class="offer__info">Каждый, созданный студией, интерьер - индивидуальное и максимально продуманное решение для каждого
+                                вида помещения
+                            </p>
+                        </div>
+                        <div class="offer__item">
+                            <div class="offer__number">04
+                            </div>
+                            <div class="offer__title">
+                                Работаем на выгодных
+                                <br/>условиях
+                            </div>
+                            <p class="offer__info">Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса работы и получаем
+                                результат который делает клиентов счастивыми
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio container" id="portfolio">
+                        <h1 class="portfolio__title b-page__title">Портфолио
+                        </h1>
+                        <div class="portfolio__nav">
+                            <a class="portfolio__slide-link"></a>
+                        </div>
+                        <div class="tabs portfolio__tabs" id="portfolio-tabs">
+                            <ul>
+                                <li class="tab portfolio__tab">
+                                    <a class="tab__title tabs__tab" href="#tab1">Все проекты</a>
+                                </li>
+                                <li class="tab portfolio__tab">
+                                    <a class="tab__title tabs__tab" href="#tab2">Дизайн интерьеров</a>
+                                </li>
+                                <li class="tab portfolio__tab">
+                                    <a class="tab__title tabs__tab" href="#tab3">Отделочные работы</a>
+                                </li>
+                            </ul>
+                            <div class="tabs__block portfolio__tab-block" id="tab1">
+                                <div class="owl-slider owl-carousel portfolio__slider" id="owl-portfolio1">
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">Дизайн итрельера
+                                                <br/>гостиной
+                                            </div>
+                                        </div>
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide3.jpg"
+                                        alt="" role="presentation" />
+                                    </div>
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">дизайн
+                                            </div>
+                                        </div>
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide2.jpg"
+                                        alt="" role="presentation" />
+                                    </div>
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">Дизайн столовой
+                                                <br/>в стиле "Бохо"
+                                            </div>
+                                        </div>
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide3.jpg"
+                                        alt="" role="presentation" />
+                                    </div>
+                                </div>
+                                <div class="tabs__subtitle portfolio__subtitle">Дизайн интерьера гостиной
+                                </div>
+                            </div>
+                            <div class="tabs__block portfolio__tab-block" id="tab2">
+                                <div class="owl-slider owl-carousel portfolio__slider" id="owl-portfolio2">
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide1.jpg"
+                                        alt="" role="presentation" />
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">Лофт интерьер
+                                                <br/>для отеля Hiloft
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide2.jpg"
+                                        alt="" role="presentation" />
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide3.jpg"
+                                        alt="" role="presentation" />
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">Лофт интерьер
+                                                <br/>для отеля Hiloft
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__subtitle portfolio__subtitle">Дизайн интерьера гостиной
+                                </div>
+                            </div>
+                            <div class="tabs__block portfolio__tab-block" id="tab3">
+                                <div class="owl-slider owl-carousel portfolio__slider" id="owl-portfolio3">
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide1.jpg"
+                                        alt="" role="presentation" />
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">Лофт интерьер
+                                                <br/>для отеля Hiloft
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide2.jpg"
+                                        alt="" role="presentation" />
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">Лофт интерьер
+                                                <br/>для отеля Hiloft
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-slider__slide portfolio__slide">
+                                        <img class="owl-slider__img portfolio__slide-img" src="static/img/content/porf-slide3.jpg"
+                                        alt="" role="presentation" />
+                                        <div class="owl-slider__holder portfolio__slide-holder">
+                                            <div class="owl-slider__holder-title portfolio__slide-title">Лофт интерьер
+                                                <br/>для отеля Hiloft
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__subtitle portfolio__subtitle">Дизайн интерьера кухни
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="our-services flex container" id="our-services">
+                        <h1 class="our-services__title b-page__title">Наши услуги
+                        </h1>
+                        <div class="tabs our-services__tabs" id="our-services-tabs">
+                            <ul>
+                                <li class="tab our-services__tab">
+                                    <a class="tab__title tabs__tab" href="#tab1">Дизайн жилого помещения</a>
+                                </li>
+                                <li class="tab our-services__tab">
+                                    <a class="tab__title tabs__tab" href="#tab2">Дизайн отельных комнат</a>
+                                </li>
+                                <li class="tab our-services__tab">
+                                    <a class="tab__title tabs__tab" href="#tab3">Дизайн коммерческих объектов</a>
+                                </li>
+                                <li class="tab our-services__tab">
+                                    <a class="tab__title tabs__tab" href="#tab4">Ремонт под ключ</a>
+                                </li>
+                                <li class="tab our-services__tab">
+                                    <a class="tab__title tabs__tab" href="#tab5">Отделочные работы</a>
+                                </li>
+                                <li class="tab our-services__tab">
+                                    <a class="tab__title tabs__tab" href="#tab6">Выезд дизайнера на дом</a>
+                                </li>
+                            </ul>
+                            <div class="tabs__block" id="tab1">
+                                <div class="our-services__img-block">
+                                    <IMG class="our-services__img" src="static/img/content/our-services.jpg"></IMG>
+                                </div>
+                                <div class="tabs__ttl-block our-services__ttl-block">
+                                    <H3 class="our-services__title">Дизайн коммерческий объектов</H3>
+                                    <div class="our-services__prj-number">532
+                                        <span>проекта</span>
+                                    </div>
+                                </div>
+                                <div class="our-services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие
+                                    интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер
+                                    снова и снова</div>
+                            </div>
+                            <div class="tabs__block" id="tab2">
+                                <div class="our-services__img-block">
+                                    <IMG class="our-services__img" src="static/img/content/our-services.jpg"></IMG>
+                                </div>
+                                <div class="tabs__ttl-block our-services__ttl-block">
+                                    <H3 class="our-services__title">Дизайн коммерческий объектов</H3>
+                                    <div class="our-services__prj-number">532
+                                        <span>проекта</span>
+                                    </div>
+                                </div>
+                                <div class="our-services__text">с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры
+                                    такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и
+                                    снова</div>
+                            </div>
+                            <div class="tabs__block" id="tab3">
+                                <div class="our-services__img-block">
+                                    <IMG class="our-services__img" src="static/img/content/our-services.jpg"></IMG>
+                                </div>
+                                <div class="tabs__ttl-block our-services__ttl-block">
+                                    <H3 class="our-services__title">Дизайн коммерческий объектов</H3>
+                                    <div class="our-services__prj-number">532
+                                        <span>проекта</span>
+                                    </div>
+                                </div>
+                                <div class="our-services__text">с коммерческими объектами, студия изучает целевую аудиторию</div>
+                            </div>
+                            <div class="tabs__block" id="tab4">
+                                <div class="our-services__img-block">
+                                    <IMG class="our-services__img" src="static/img/content/our-services.jpg"></IMG>
+                                </div>
+                                <div class="tabs__ttl-block our-services__ttl-block">
+                                    <H3 class="our-services__title">Дизайн коммерческий объектов</H3>
+                                    <div class="our-services__prj-number">532
+                                        <span>проекта</span>
+                                    </div>
+                                </div>
+                                <div class="our-services__text">с коммерческими объектами, студия изучает целевую аудиторию</div>
+                            </div>
+                            <div class="tabs__block" id="tab5">
+                                <div class="our-services__img-block">
+                                    <IMG class="our-services__img" src="static/img/content/our-services.jpg"></IMG>
+                                </div>
+                                <div class="tabs__ttl-block our-services__ttl-block">
+                                    <H3 class="our-services__title">Дизайн коммерческий объектов</H3>
+                                    <div class="our-services__prj-number">532
+                                        <span>проекта</span>
+                                    </div>
+                                </div>
+                                <div class="our-services__text">с коммерческими объектами, студия изучает целевую аудиторию</div>
+                            </div>
+                            <div class="tabs__block" id="tab6">
+                                <div class="our-services__img-block">
+                                    <IMG class="our-services__img" src="static/img/content/our-services.jpg"></IMG>
+                                </div>
+                                <div class="tabs__ttl-block our-services__ttl-block">
+                                    <H3 class="our-services__title">Дизайн коммерческий объектов</H3>
+                                    <div class="our-services__prj-number">532
+                                        <span>проекта</span>
+                                    </div>
+                                </div>
+                                <div class="our-services__text">с коммерческими объектами, студия изучает целевую аудиторию</div>
+                            </div>
+                        </div>
+                        <a class="btn btn_default our-services__btn" href="javascript:void(0)">Консультация</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="work-steps container" id="work-steps">
+                        <h1 class="work-steps__title b-page__title">Этапы работы
+                        </h1>
+                        <div class="work-steps__items">
+                            <div class="work-steps__item">
+                                <div class="work-steps__number">1
+                                </div>
+                                <div class="work-steps__info">
+                                    <div class="work-steps__item-title">Консультация
+                                    </div>
+                                    <div class="work-steps__text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки
+                                        реализации.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-steps__item">
+                                <div class="work-steps__number">2
+                                </div>
+                                <div class="work-steps__info">
+                                    <div class="work-steps__item-title">Техническое задание
+                                    </div>
+                                    <div class="work-steps__text">Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-steps__item">
+                                <div class="work-steps__number">3
+                                </div>
+                                <div class="work-steps__info">
+                                    <div class="work-steps__item-title">Замеры и планировка
+                                    </div>
+                                    <div class="work-steps__text">Фиксируем размеры стен, окон, плинтусов, дверных проемов для эффективной работы
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-steps__item">
+                                <div class="work-steps__number">4
+                                </div>
+                                <div class="work-steps__info">
+                                    <div class="work-steps__item-title">Дизайн-концепция
+                                    </div>
+                                    <div class="work-steps__text">
+                                        Создаем концепцию на основе пожеланий клиента, его образов и ощущений. подбираем мебель.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-steps__item">
+                                <div class="work-steps__number">5
+                                </div>
+                                <div class="work-steps__info">
+                                    <div class="work-steps__item-title">3D Визуализация
+                                    </div>
+                                    <div class="work-steps__text">Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам..
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-steps__item">
+                                <div class="work-steps__number">6
+                                </div>
+                                <div class="work-steps__info">
+                                    <div class="work-steps__item-title">Комплектация интерьера
+                                    </div>
+                                    <div class="work-steps__text">Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order container" id="order">
+                        <form class="order__form" action="#" method="post">
+                            <div class="order__title">
+                                <span>Мечтаете</span>об интерьере от BRUME?
+                            </div>
+                            <p class="order__text">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.
+                            </p>
+                            <div class="input input input_light order__input-name">
+                                <label class="input__label" for="name">name
+                                </label>
+                                <input class="input__input input-name-js input__error" type="text" name="name" id="name"
+                                data-error-msg="input-name-js-error" placeholder="Имя*" required="required" />
+                                <div class="input__error-msg input-name-js-error">
+                                </div>
+                            </div>
+                            <div class="input input input_light order__input-phone">
+                                <label class="input__label" for="phone">phone
+                                </label>
+                                <input class="input__input input-phone-js input__error" type="text" name="phone"
+                                id="phone" data-error-msg="input-phone-js-error" placeholder="Телефон*" required="required"
+                                />
+                                <div class="input__error-msg input-phone-js-error">
+                                </div>
+                            </div>
+                            <div class="input input input_light order__input-mail">
+                                <label class="input__label" for="email">email
+                                </label>
+                                <input class="input__input input-mail-js input__error" type="text" name="email" id="email"
+                                data-error-msg="input-mail-js-error" placeholder="E-mail" required="required" />
+                                <div class="input__error-msg input-mail-js-error">
+                                </div>
+                            </div>
+                            <input class="btn btn_orange" type="submit" value="отправить" />
+                            <div class="order__btn-info">
+                                Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="clients-feedback container" id="сlients-feedback">
+                        <h1 class="clients-feedback__title b-page__title">Отзывы наших клиентов
+                        </h1>
+                        <div class="owl-slider owl-carousel clients-feedback__slider" id="feedback-slider">
+                            <div class="owl-slider__slide clients-feedback__slide">
+                                <img class="owl-slider__img clients-feedback__img" src="static/img/content/feedback-photo3.jpg"
+                                alt="" role="presentation" />
+                                <div class="owl-slider__block-info clients-feedback__block-info">
+                                    <div class="owl-slider__name clients-feedback__name">Александра Холодная
+                                    </div>
+                                    <div class="owl-slider__service clients-feedback__service">Услуга: интерьер детской
+                                    </div>
+                                    <p class="owl-slider__feedback clients-feedback__feedback">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро
+                                        и легко, команда выполнила все точно в срок, сделали все как мы и хотели. В следующий
+                                        раз обратимся к BRUME!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="owl-slider__slide clients-feedback__slide">
+                                <img class="owl-slider__img clients-feedback__img" src="static/img/content/feedback-photo2.jpg"
+                                alt="" role="presentation" />
+                                <div class="owl-slider__block-info clients-feedback__block-info">
+                                    <div class="owl-slider__name clients-feedback__name">Александр Холодный
+                                    </div>
+                                    <div class="owl-slider__service clients-feedback__service">Услуга: интерьер детской
+                                    </div>
+                                    <p class="owl-slider__feedback clients-feedback__feedback">Спасибо студии за замечательный интерьер для моей 4-х летней доч
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="owl-slider__slide clients-feedback__slide">
+                                <img class="owl-slider__img clients-feedback__img" src="static/img/content/feedback-photo3.jpg"
+                                alt="" role="presentation" />
+                                <div class="owl-slider__block-info clients-feedback__block-info">
+                                    <div class="owl-slider__name clients-feedback__name">Александра Холодная
+                                    </div>
+                                    <div class="owl-slider__service clients-feedback__service">Услуга: интерьер детской
+                                    </div>
+                                    <p class="owl-slider__feedback clients-feedback__feedback">Спасибо студии за замечательный интерьер для моей 4-х летней доч
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slider__pagination swiper-pagination">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <a class="scrollto scroll-link-js footer__logo" href="/design" data-link="design">
+            <img class="scrollto__img footer__logo-img" src="static/img/content/bottom-logo.png" alt="" role="presentation" />
+        </a>
+        <div class="footer__socials">
+            <a href="jv0">
+                <img class="footer__vk" src="static/img/content/vk.png" alt="" role="presentation" />
+            </a>
+            <a href="jv0">
+                <img class="footer__inst" src="static/img/content/insta.png" alt="" role="presentation" />
+            </a>
+            <a href="jv0">
+                <img class="footer__fb" src="static/img/content/fb.png" alt="" role="presentation" />
+            </a>
+        </div>
+        <div class="footer__info">BRUME interior, 2017
+        </div>
+    </footer>
+    <script src="static/js/separate-js/jquery.min.js"></script>
+    <script src="static/js/main.min.js"></script>
+</body>
+
+</html>

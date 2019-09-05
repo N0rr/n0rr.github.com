@@ -1,0 +1,1 @@
+[2019-08-27 16:41:06] layer "+7 (800  ) 823  48 88": Expected Either a default asset specification or a layer asset specification but "+" found.
