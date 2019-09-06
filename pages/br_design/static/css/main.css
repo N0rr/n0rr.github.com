@@ -2894,6 +2894,7 @@ html, body {
   z-index: 0;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1280px) {
