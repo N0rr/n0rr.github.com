@@ -1,0 +1,112 @@
+.work-steps {
+    @include above($tablet) {
+        margin-top: rem(150);
+    }
+
+    &__items {
+        @include above($tablet) {
+            display: flex;   
+            flex-wrap: wrap;         
+        }
+
+        @include above($desktop) {
+            margin-top: rem(85);
+        }
+    }
+
+    &__item {
+        @include above($tablet) {            
+            display: inline-flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 50%;
+        }
+
+        @include above($desktop) {
+            width: 33%;
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__number {
+        display: none;
+
+        @keyframes line {
+            0%  {
+                box-shadow:                    
+                    0px 0px 0 6px #fdfaf3,
+                    0px 0px 0 7px rgba(253, 229, 209, 1),
+                    0px 0px 0 18px #fdfaf3,
+                    0px 0px 0 19px rgba(253, 229, 209, 1);                  
+            }    
+            100% {
+                box-shadow: 
+                    0px 0px 0 18px #fdfaf3,
+                    0px 0px 0 19px rgba(253, 229, 209, 0.2),
+                    0px 0px 0 24px #fdfaf3,
+                    0px 0px 0 25px rgba(253, 229, 209, 0.2),
+                    0px 0px 0 30px #fdfaf3,
+                    0px 0px 0 31px rgba(253, 229, 209, 0.2),;
+            }
+        }
+
+        @include above($tablet) {
+            display: inline-flex;
+            align-items: center;      
+            justify-content: center;
+            min-width: rem(22);
+            min-height: rem(22);   
+            margin-right: rem(35);        
+
+            font-size: rem(12);
+
+            border-radius: 50%;            
+
+            background: #fde5d1;
+            // box-shadow: 
+            //     0px 0px 0 7px #fdfaf3,
+            //     0px 0px 0 8px #fde5d1,
+            //     0px 0px 0 19px #fdfaf3,
+            //     0px 0px 0 20px #fde5d1;
+            
+            animation: 1.5s ease 0s infinite line;
+        }
+    }
+     
+    &__item-title {
+        font-family: $font-3;
+        font-size: rem(24);
+        color: #313131;
+        text-align: left;
+
+        @include above($desktop) {
+            font-size: rem(22);
+        }        
+
+        &:after {
+            content: '';
+
+            display: block;
+            width: rem(40);
+            height: rem(1);
+            margin-top: rem(10);
+            
+            background: #000;
+        }
+    }
+
+    &__text {
+        margin-top: rem(20);
+        margin-bottom: rem(40);
+
+        font-size: rem(18);
+        line-height: rem(25);
+        color: #5e5e5e;
+
+        text-align: left;
+
+        @include above($desktop) {
+            font-size: rem(16);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+include ../icon/icon
+include ../scrollto/scrollto
+
+
+mixin footer(data)
+    +b.FOOTER.footer()&attributes(attributes)
+        +scrollto({href: 'design'}).footer__logo
+            +e.IMG.img.footer__logo-img(src='static/img/content/bottom-logo.png')
+
+        +e.__socials
+            +e.A(href='jv0')
+                +e.IMG.__vk(src='static/img/content/vk.png')
+            +e.A(href='jv0')
+                +e.__inst(src='static/img/content/insta.png')
+            +e.A(href='jv0')
+                +e.__fb(src='static/img/content/fb.png')
+
+        +e.__info
+            | BRUME interior, 2017

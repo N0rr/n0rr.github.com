@@ -1,0 +1,176 @@
+.portfolio {
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+
+        background: none;    
+
+        .ui-tabs-nav {
+            @include above($tablet) {
+                flex-direction: row;
+                justify-content: space-between;
+
+                &:before,
+                &:after {
+                    display: none;
+                }
+            }
+
+            @include above($desktop) {
+                justify-content: flex-start;
+            }
+            
+        }    
+    }
+
+    &__tab {
+        display: flex;
+        flex-direction: column;
+        alight-items: flex-start;        
+
+        a {
+            color: #bababa !important;
+
+            @include above($tablet) {
+                padding: rem(10) 0 !important;                
+            }
+
+            @include above($desktop) {
+                margin-right: rem(65);
+            }
+        }
+    }
+
+    &__tab-block {
+        margin-right: rem(-16);     
+        margin-left: rem(-16);
+
+        transition: all 0.2s ease;
+
+        @include above($tablet) {
+            margin-right: rem(-36);
+            margin-left: rem(-36);
+        }
+
+        @include above($desktop) {
+            margin: 0;
+        }
+    }
+   
+    &__slider {   
+        width: 100vw;
+        height: rem(540);           
+        margin-top: rem(20);   
+
+        @include above($tablet) {
+            height: rem(612);
+        }     
+
+        @include above($desktop) {
+            width: auto;
+        }
+    }
+
+    &__slide {        
+        position: relative;
+ 
+        width: 80vw;
+        height: rem(540);
+
+        overflow: hidden;
+
+        @include above($tablet) {
+            height: rem(612);
+        }     
+
+        @include above($desktop) {
+            width: rem(260);
+
+            cursor: pointer;
+            // width: 100%;
+            transition: 0.2s;
+
+            &:hover {
+                width: rem(390);
+
+                .portfolio__slide-holder {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    .owl-item {
+        transition: 0.2s;
+
+        &:hover {
+            // width: rem(390) !important;               
+        }
+    }
+
+    &__slide-holder {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+
+            display: block;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(24, 44, 61, 0.9);
+
+            transition: all 0.5s ease;      
+    }
+
+    &__slide-title {
+        display: none;
+
+        @include above($desktop) {
+            display: block;
+            padding: rem(28) rem(33);
+
+            font-family: $font-4;
+            font-size: rem(16);
+            color: #fff;
+
+            text-align: left;
+             
+        }
+    }
+
+    .active.center &__slide {
+        @include above($desktop) {
+        //    width: rem(390);
+        }
+    }
+
+    .active.center &__slide-holder {           
+        background: none;    
+
+        @include above($desktop) {
+            background: rgba(24, 44, 61, 0.9);
+        }
+    }
+
+    &__slide-img { 
+        width: auto !important;       
+        margin: auto;
+    }
+
+    &__subtitle {
+        margin-top: rem(20);
+
+        font-family: $font-1;
+        font-size: rem(18);
+        font-weight: bold;
+        color: $color-1;
+        letter-spacing: rem(1);
+
+        @include above($tablet) {
+            margin-top: rem(50);
+        }
+    }
+    
+}

@@ -1,0 +1,33 @@
+include ../design/design
+include ../offer/offer
+include ../portfolio/portfolio 
+include ../our-services/our-services
+include ../work-steps/work-steps
+include ../order/order
+include ../clients-feedback/clients-feedback
+include ../swiper-slider/swiper-slider
+include ../swiper-slider/swiper-slide/swiper-slide
+
+
+
+mixin b-page(data)
+    +b.b-page()&attributes(attributes)  
+        +swiper-slider({id: 'swiper-page'}).swiper-slider_fullpage
+            +swiper-slide       
+                +design(id='design').container
+            +swiper-slide
+                +offer(id='offer').container
+            +swiper-slide
+                +portfolio(id='portfolio').container
+            +swiper-slide
+                +our-services(id='our-services').container
+            +swiper-slide
+                +work-steps(id='work-steps').container
+            +swiper-slide
+                +order(id='order').container
+            +swiper-slide
+                +clients-feedback(id='сlients-feedback').container
+
+        
+        
+        

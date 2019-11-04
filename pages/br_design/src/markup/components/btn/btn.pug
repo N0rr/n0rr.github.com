@@ -1,0 +1,3 @@
+mixin btn(data)    
+    +b(data.tag ? data.tag : 'a').btn(class= data.theme ? '_' + data.theme : '' href=(data.tag !== 'input' ? jv0 : false) type=(data.tag === 'input' ? 'submit': false) value=(data.tag === 'input' ? data.value : false))&attributes(attributes)
+        block

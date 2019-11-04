@@ -1,0 +1,95 @@
+.offer {
+    margin-top: rem(75);
+
+    @include above($tablet) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    @include above($desktop) {
+        flex-wrap: nowrap;        
+        margin-top: rem(128);
+    }
+
+    &__item {
+        @include above($tablet) {
+            width: 50%;
+            padding-right: rem(100);
+
+            @include above($desktop) {
+                width: 25%;
+                padding-right: rem(40);
+            }            
+
+            &:nth-child(1) {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2) {
+                margin-top: rem(190);
+            }
+
+            &:nth-child(3) {
+                margin-top: 0;
+            }
+
+            &:nth-child(4) {
+                margin-top: rem(170);
+            }
+        }
+    }
+
+    &__number {
+        font-family: $font-2;
+        font-size: rem(85);
+        color: $color-3;
+        text-align: left;
+  
+        opacity: 0.4;
+
+        @include above($tablet) {
+            font-size: rem(85);
+            line-height: rem(85);
+        }
+    } 
+
+    &__title {
+        font-family: $font-1;
+        font-weight: bolder;
+        text-align: left;    
+
+        @include above($tablet) {
+            margin-top: rem(20);
+
+            font-size: rem(24);
+        }    
+
+        @include above($desktop) {
+            font-size: rem(22);
+        }
+    }
+
+    &__info {
+        margin-top: rem(20);
+
+        font-family: $font-3;
+        font-size: rem(18);
+        font-weight: light;
+        color: #838383;        
+        text-align: left;
+        letter-spacing: 2.5px;
+
+        @include above($tablet) {
+            letter-spacing: 0;
+        }
+
+        @include above($desktop) {
+            font-family: $font-1;
+            font-size: rem(16);
+        }
+    }
+
+
+}

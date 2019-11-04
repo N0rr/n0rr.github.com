@@ -1,0 +1,107 @@
+.header {   
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    @include above($desktop) {
+        position: absolute;  
+        z-index: 10;       
+
+        display: flex;
+        height: rem(84);
+        margin: 0 auto;      
+
+        &:before {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+            width: 50%;
+            height: 100%;
+
+            background: #182c3d;
+        }
+
+        &:after {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            display: block;
+            width: 50%;
+            height: 100%;
+
+            background: #fdfaf3;
+        }
+    }
+
+    &__logo {
+        position: relative;
+
+        z-index: 2;
+        
+        padding: rem(20);
+
+        @include above($tablet) {
+            margin-top: rem(15);
+            margin-left: rem(5);
+        }
+
+        @include above($desktop) {
+            display: block;
+            width: rem(63);
+            height: rem(30);            
+            padding: 0;
+            padding-left: rem(4);
+            margin: auto;
+
+        }
+
+        img {
+            width: rem(90);
+            padding: rem(20);
+
+            @include above($desktop) {
+                padding: 0;                
+            }
+        }
+    }
+
+    &__phone {
+        display: none;
+
+        @include above($desktop) {
+            position: absolute;
+            z-index: 2;
+            top: rem(32);
+            right: rem(94);
+
+            display: inline-flex;
+
+            font-family: $font-3;
+            color: #252525;
+            text-decoration: none;
+
+            &:before { 
+                @include bg($phone-icon);
+                content: '';
+
+                position: relative; 
+
+                z-index: 100;
+
+                margin-top: rem(2);
+                margin-right: rem(10);
+            }
+            
+        }
+    }
+}

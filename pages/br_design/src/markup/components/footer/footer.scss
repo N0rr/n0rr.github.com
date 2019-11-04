@@ -1,0 +1,58 @@
+.footer {
+    @include above($desktop) {
+        
+    }
+    padding-top: rem(80);
+    padding-bottom: rem(85);
+    margin-top: rem(150);
+
+    background: $color-1;
+
+    &__logo {
+        display: block;
+        margin: auto;        
+    }
+
+    &__logo-img {
+        display: block;
+        margin: auto;
+        pointer-events: none;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;        
+        justify-content: space-between;
+        width: rem(215);
+        margin: auto;
+        margin-top: rem(30);
+
+        a {
+            height: 100%;
+        }
+    }
+
+    &__vk {
+        width: rem(30);
+        height: rem(19);
+    }
+
+    &__insta {
+        width: rem(27);
+        height: rem(26);
+    }
+
+    &__fb {
+        width: rem(13);
+        height: rem(26);
+    } 
+
+    &__info {
+        margin-top: rem(40);
+
+        font-size: rem(20);
+        line-height: rem(30);
+        color: $color-4;
+        text-align: center;
+    }   
+}

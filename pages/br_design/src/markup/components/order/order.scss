@@ -1,0 +1,202 @@
+.order {
+    position: relative;
+
+    padding-bottom: rem(100);
+
+    background: $color-1 url(%=static=%content/kitchen.jpg) 50%;
+    background-size: cover;
+
+    @include above($desktop) {
+        padding-bottom: 0;
+
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: contain;
+    }
+
+    @include above($desktop) {
+        margin-top: rem(100);
+    }
+
+    &:after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+        background: #182c3d;    
+        opacity: 0.8;
+
+        @include above($desktop) {
+            display: none;
+        } 
+        
+    }
+
+    &__title {
+        font-family: $font-2;
+        font-size: rem(45);
+        color: #fff;
+
+        @include above($desktop) {     
+            padding-right: rem(20);
+       
+            text-align: left;
+        }
+
+        span {
+            @include above($tablet) {
+                display: block;
+            }
+
+            @include above($desktop) {
+                display: inline;
+            }
+        }
+    }
+
+    &__form {
+        position: relative;
+        z-index: 1;
+
+        margin-top: rem(80);
+
+        @include above($desktop) {
+            width: 50%;
+            // height: rem(690);
+            padding-top: rem(75);
+            padding-bottom: rem(85);   
+            margin-top: 0;        
+            margin-right: auto;
+
+            background: $color-1;
+        }
+    }
+
+    &__text {
+        margin-top: rem(15);
+
+        font-family: $font-1;
+        line-height: rem(24);
+        color: #fff;
+        letter-spacing: rem(1);
+
+        @include above($tablet) {
+            padding: 0 rem(80);
+            margin: auto;
+            margin-top: rem(26);
+
+            font-size: rem(22);            
+        }
+
+        @include above($desktop) {
+            padding: 0;
+            
+            font-size: rem(14);
+            text-align: left;
+            letter-spacing: normal;
+        }
+    }    
+
+    .input {
+        max-width: rem(474);
+        margin: auto;
+        margin-top: rem(30);
+
+        font-size: rem(18);
+
+        @include above($desktop) {
+            margin-left: 0;
+        }
+    }
+
+    &__input-name,
+    &__input-phone,
+    &__input-mail {
+        @include above($tablet) {
+            position: relative;
+
+            width: 100%;
+
+            &:after {
+                @include bg($icon-name);
+                content: '';
+
+                position: absolute;
+                top: rem(10);
+                right: rem(0);
+
+                display: block;
+            }            
+        }
+    }
+
+    &__input-phone {
+        @include above($tablet) {
+            &:after {
+                @include bg($icon-phone);
+            }
+        }
+    }
+
+    &__input-mail {
+        @include above($tablet) {
+            &:after {
+                @include bg($icon-mail);
+            }
+        }
+    }
+
+    .input__error-msg {        
+        margin: auto;
+        margin-top: rem(10);
+
+        font-size: rem(15);
+        color: $color-3;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: rem(475);
+        padding: rem(20);
+        margin: auto;
+        margin-top: rem(50);
+
+        @include above($tablet) {
+            font-size: rem(18);
+            font-weight: normal;
+        }
+
+        @include above($desktop) {
+            display: block;
+            margin-left: 0;
+        }
+    }
+
+    &__btn-info {
+        padding-right: rem(15);
+        margin-top: rem(20);
+
+        font-size: rem(16);
+        color: #fff;
+
+        @include above($tablet) {
+            padding:0 rem(120);
+
+            font-size: rem(18);
+        }
+
+        @include above($desktop) {
+            padding: 0;
+            padding-right: rem(140);
+
+            font-size: rem(14);
+            text-align: left;
+        }
+    }
+}

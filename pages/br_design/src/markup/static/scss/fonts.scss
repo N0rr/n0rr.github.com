@@ -1,0 +1,21 @@
+/* Your custom fonts here */
+
+/* Example
+
+@include font-face('Open Sans', '../fonts/OpenSans-Italic', normal, italic, $exts: woff woff2 ttf);
+
+// Var for using custom font
+$font-1: 'Open Sans', Helvetica, Arial, sans-serif;
+*/
+
+@include font-face('Playfair Display Bold', '../fonts/Playfair Display Bold', normal, $exts: woff woff2 ttf);
+@include font-face('Raleway-Regular', '../fonts/Raleway-Regular', normal, $exts: woff woff2 ttf);
+@include font-face('Myriad Pro', '../fonts/Myriad Pro', normal, $exts: woff woff2 ttf);
+@include font-face('Raleway ExtraBold', '../fonts/Raleway ExtraBold', normal, $exts: woff woff2 ttf);
+
+// Var for using custom font
+
+$font-1: 'Raleway-Regular', Helvetica, Arial, sans-serif;
+$font-2: 'Playfair Display Bold', Helvetica, Arial, sans-serif;
+$font-3: 'Myriad Pro', Helvetica, Arial, sans-serif;
+$font-4: 'Raleway ExtraBold', Helvetica, Arial, sans-serif;

@@ -1,0 +1,160 @@
+.our-services {
+    @include above($tablet) {
+        margin-top: rem(150);
+    }
+
+    &__tabs {
+        background: none;
+
+        @include above($desktop) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+         }
+
+        .ui-tabs-nav {
+            @include above($tablet) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            @include above($desktop) {
+                flex-direction: column; 
+                width: rem(285);
+            }
+        }
+
+        .tab {
+            @include above($tablet) {
+                width: 50%;    
+                padding-right: rem(100) !important;
+                margin: 0 !important;
+
+                text-align: left;
+                white-space: normal !important;            
+            }
+
+            @include above($desktop) {   
+                width: auto;
+                padding-right: rem(80) !important;                
+            }
+        }
+    }
+
+    .tab.ui-tabs-active {        
+        @include above($desktop) {       
+            padding: 0 !important;            
+
+            a {
+                padding-right: rem(40) !important;
+                padding-left: rem(40) !important;
+
+                border: none;
+            }
+        }
+    }
+
+    &__tab a {
+        padding: 0 !important;
+        margin-bottom: rem(30);
+          
+        color: rgba(0,0,0, 0.4) !important;
+
+        @include above($tablet) {
+            display: block;            
+        }
+
+        @include above($desktop) {
+            margin-bottom: rem(75);
+
+            font-size: rem(18) !important;
+        }
+    
+    }
+
+    .tabs__block {
+        @include above($desktop) {
+            display: flex;
+            flex-direction: column;
+            width: rem(878);
+        }
+    }
+
+    &__img-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: rem(390);
+        margin-top: rem(65);
+        margin-right: rem(-16);
+        margin-left: rem(-16);
+
+         @include above($desktop) {
+             margin: 0;
+         }
+    }
+
+    &__img {
+        width: auto;       
+        height: 100%;
+
+        
+        
+        @include above($tablet) {
+            margin-left: 0;
+        }
+    }
+
+    &__ttl-block {
+        display: none;
+
+        @include above($tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: rem(70);
+        }
+    }
+
+    &__title {
+        font-family: $font-2;
+        font-size: rem(30);
+        font-weight: normal;
+        color: $color-1;
+    }
+
+    &__prj-number {        
+        font-family: $font-1;
+        font-size: rem(22);
+        color: $color-1;
+
+        span {
+            padding-left: rem(10);
+        }
+    }
+
+    &__text {
+        margin-top: rem(35);
+
+        line-height: rem(30);
+        color: #5e5e5e;
+        text-align: left;
+        letter-spacing: rem(0.4);
+    }
+
+    &__btn {
+        margin-top: rem(50);
+
+        @include above($tablet) {
+            align-items: flex-start;
+            justify-content: flex-start;
+            align-self: flex-start;
+        }
+
+        @include above($desktop) {
+            margin-left: auto;
+        }
+        
+    }
+}

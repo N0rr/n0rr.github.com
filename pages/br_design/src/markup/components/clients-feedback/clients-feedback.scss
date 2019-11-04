@@ -1,0 +1,135 @@
+.clients-feedback {
+    
+    @include above($tablet) {
+        padding: 0;
+        margin-top: rem(120);
+    }
+
+    &__title {
+        @include above($tablet) {
+            padding: 0 rem(36);
+        }
+    }
+
+    &__slider {
+        @include above($desktop) {
+           
+        }       
+        background: #fff;
+
+        @include above($tablet) {
+            padding-left: rem(36);
+           
+            background: none;
+        }
+    }
+
+    &__slide {
+        @include above($tablet) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;            
+            width: 100%;            
+        }
+
+        @include above($desktop) {
+            width: rem(790);
+
+            &:before {
+                content: '';
+
+                position: absolute;
+                z-index: 10;
+                top: rem(50);
+                left: 0;
+
+                display: block;
+                width: 100%;
+                height: rem(193);                
+
+                background: rgba(24, 44, 61, 0.9);
+            } 
+        }
+    }
+
+    &__block-info { 
+        margin-top: rem(20);
+
+        @include above($tablet) {  
+            min-height: rem(275);
+            padding: rem(50);
+            padding-right: rem(110);
+            padding-left: rem(70);
+            margin-right: -90px;          
+
+
+            background: #fff;
+        }
+
+        @include above($desktop) {
+            width: rem(683);
+        }
+    }
+
+    .active.center {
+        @include above($desktop) {
+            .clients-feedback__slide:before {
+                display: none;
+            }           
+        }
+
+        +.owl-item .clients-feedback__slide {
+            flex-direction: row;
+        } 
+    }
+
+    &__img {
+        @include above($desktop) {
+            
+            
+        }
+        width: rem(218) !important;
+        height: rem(200);
+        margin: 0 auto;
+
+        @include above($tablet) {
+            // margin-right: rem(-90);
+            z-index: 1;
+
+            width: rem(193) !important;
+            height: rem(187);
+        }
+    }    
+
+    &__name {
+        font-family: $font-4;
+        font-size: rem(24);
+
+        @include above($tablet) {
+            font-size: rem(22);
+            text-align: left;
+        }
+    }
+
+    &__service {
+        color: $color-4;
+
+        @include above($tablet) {
+            margin-top: rem(10);
+
+            font-size: rem(16);
+            text-align: left;
+        }
+    }
+
+    &__feedback {
+        color: #5e5e5e;
+
+        @include above($tablet) {
+            margin-top: rem(20);
+
+            font-size: rem(16);
+            text-align: left;
+        }
+    }
+}

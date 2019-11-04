@@ -1,0 +1,46 @@
+include ../slide-menu/slide-menu
+include ../scrollto/scrollto
+
+
+mixin header(data)
+    +b.HEADER.header()&attributes(attributes)
+        +e.PICTURE.__logo
+            +e.SOURCE(media='(min-width: 1280px)' srcset='static/img/content/logo.png')
+            +e.IMG(src='static/img/content/bottom-logo.png')
+
+        +e.A.phone(href='tel: +88008234888') +7 (800) 823 48 88
+
+        +slide-menu.slide-menu_static.scroll-to-container-js.slide-menu_custom
+            +e.block
+                +scrollto({href: 'design', slide: '0'}).slide-menu__link
+                    | Главная
+
+                +scrollto({href: 'offer', slide: '1'}).slide-menu__link
+                    | Преимущества
+
+                +scrollto({href: 'portfolio', slide: '2' }).slide-menu__link
+                    | Портфолио
+
+                +scrollto({href: 'our-services', slide: '3'}).slide-menu__link
+                    | Наши услуги
+
+                +scrollto({href: 'clients-feedback', slide: '6'}).slide-menu__link
+                    | Отзывы
+
+                +scrollto({href: 'order', slide: '5'}).slide-menu__link
+                    | Контакты 
+
+                +e.socials.flex.row-between
+                    +e.A.__social(href=jv0).flex.align-center
+                        +e.IMG.__vk(src='static/img/content/vk.png')
+
+                    +e.A.__social(href=jv0)
+                        +e.IMG.__insta(src='static/img/content/insta.png')
+
+                    +e.A.__social(href=jv0)
+                        +e.IMG.__fb(src='static/img/content/fb.png')
+
+        
+        
+
+

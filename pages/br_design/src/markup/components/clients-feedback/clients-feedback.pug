@@ -1,0 +1,41 @@
+include ../owl-slider/owl-slider
+
+
+mixin clients-feedback(data)
+    +b.clients-feedback()&attributes(attributes)        
+        +e.H1.__title.b-page__title
+            | Отзывы наших клиентов
+
+        +owl-slider({id: 'feedback-slider'}).clients-feedback__slider
+            +e.__slide.clients-feedback__slide
+                +e.IMG.__img.clients-feedback__img(src='static/img/content/feedback-photo3.jpg')
+                +e.__block-info.clients-feedback__block-info
+                    +e.__name.clients-feedback__name
+                        | Александра Холодная
+                    +e.__service.clients-feedback__service
+                        | Услуга: интерьер детской
+
+                    +e.P.__feedback.clients-feedback__feedback
+                        | Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели. В следующий раз обратимся к BRUME!
+
+            +e.__slide.clients-feedback__slide
+                +e.IMG.__img.clients-feedback__img(src='static/img/content/feedback-photo2.jpg')
+                +e.__block-info.clients-feedback__block-info
+                    +e.__name.clients-feedback__name
+                        | Александр Холодный
+                    +e.__service.clients-feedback__service
+                        | Услуга: интерьер детской
+
+                    +e.P.__feedback.clients-feedback__feedback
+                        | Спасибо студии за замечательный интерьер для моей 4-х летней доч
+
+            +e.__slide.clients-feedback__slide
+                +e.IMG.__img.clients-feedback__img(src='static/img/content/feedback-photo3.jpg')
+                +e.__block-info.clients-feedback__block-info
+                    +e.__name.clients-feedback__name
+                        | Александра Холодная
+                    +e.__service.clients-feedback__service
+                        | Услуга: интерьер детской
+
+                    +e.P.__feedback.clients-feedback__feedback
+                        | Спасибо студии за замечательный интерьер для моей 4-х летней доч

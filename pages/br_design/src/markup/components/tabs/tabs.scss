@@ -1,0 +1,43 @@
+.tabs {
+    padding: 0;
+
+    border: none !important;
+
+    .ui-tabs-panel {
+        padding: 0;
+    }
+
+    .ui-tabs-nav {
+        display: flex;
+        flex-direction: column;
+
+        border: none;
+
+        background: none;
+    }    
+
+    .ui-tabs-active {
+        border: none;
+        background: none;        
+
+        .tabs__tab {
+            color: $color-1 !important;
+
+            @include above($desktop) {
+                border-bottom: rem(2) solid $color-1;
+            }
+        }
+    }
+
+    .tab {
+        width: auto;
+
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    &__tab {
+        
+    }
+}

@@ -1,0 +1,101 @@
+include ../owl-slider/owl-slider
+include ../tabs/tabs
+include ../tabs/tab/tab
+
+mixin portfolio(data)
+    +b.portfolio()&attributes(attributes)
+        +e.H1.__title.b-page__title
+            | Портфолио
+
+        +e.__nav
+            +e.A.__slide-link
+
+        +tabs({id: 'portfolio-tabs'}).portfolio__tabs
+            +tab({title:'Все проекты', href: 'tab1'}).portfolio__tab
+            +tab({title:'Дизайн интерьеров', href: 'tab2'}).portfolio__tab
+            +tab({title:'Отделочные работы', href: 'tab3'}).portfolio__tab            
+
+            +e.__block(id='tab1').portfolio__tab-block
+                +owl-slider({id:'owl-portfolio1'}).portfolio__slider
+                    +e.__slide.portfolio__slide
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | Дизайн итрельера 
+                                br
+                                | гостиной
+
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide3.jpg')
+                    
+                    +e.__slide.portfolio__slide
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | дизайн
+
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide2.jpg')
+                   
+                    +e.__slide.portfolio__slide
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | Дизайн столовой 
+                                br
+                                | в стиле "Бохо"
+
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide3.jpg')
+               
+                +e.subtitle.portfolio__subtitle
+                    | Дизайн интерьера гостиной
+
+            +e.__block(id="tab2").portfolio__tab-block
+                +owl-slider({id:'owl-portfolio2'}).portfolio__slider
+                    +e.__slide.portfolio__slide
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide1.jpg')
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | Лофт интерьер 
+                                br
+                                | для отеля Hiloft
+
+                    +e.__slide.portfolio__slide
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide2.jpg')
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                   
+                    +e.__slide.portfolio__slide
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide3.jpg')
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | Лофт интерьер 
+                                br
+                                | для отеля Hiloft
+
+                +e.subtitle.portfolio__subtitle
+                    | Дизайн интерьера гостиной
+                    
+            +e.__block(id="tab3").portfolio__tab-block
+                +owl-slider({id:'owl-portfolio3'}).portfolio__slider
+                    +e.__slide.portfolio__slide
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide1.jpg')
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | Лофт интерьер 
+                                br
+                                | для отеля Hiloft
+                    
+                    +e.__slide.portfolio__slide
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide2.jpg')
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | Лофт интерьер 
+                                br
+                                | для отеля Hiloft
+                    
+                    +e.__slide.portfolio__slide
+                        +e.IMG.__img.portfolio__slide-img(src='static/img/content/porf-slide3.jpg')
+                        +e.holder.portfolio__slide-holder
+                            +e.holder-title.portfolio__slide-title
+                                | Лофт интерьер 
+                                br
+                                | для отеля Hiloft
+                
+                +e.subtitle.portfolio__subtitle
+                    | Дизайн интерьера кухни

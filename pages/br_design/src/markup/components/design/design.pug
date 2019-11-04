@@ -1,0 +1,41 @@
+include ../owl-slider/owl-slider
+include ../btn/btn
+include ../scrollto/scrollto
+
+
+mixin design(data)
+    +b.design()&attributes(attributes)
+        +e.__block            
+            +e.__baner
+                +e.H1.__title.b-page__title
+                    | Дизайн интерьеров
+                +e.__text
+                    | Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.
+
+                +btn({theme:'orange'}).design__btn
+                    | Заказать Дизайн
+              
+                +scrollto({href: 'offer'}).design__link-arrow
+                    +e.IMG.__arrow.design__arrow(src='static/img/content/arrow-bot.png')
+
+                +e.socials.flex.row-between
+                    +e.A.__social(href=jv0).flex.align-center
+                        +e.IMG.__vk(src='static/img/content/vk.png')
+
+                    +e.A.__social(href=jv0)
+                        +e.IMG.__insta(src='static/img/content/insta.png')
+
+                    +e.A.__social(href=jv0)
+                        +e.IMG.__fb(src='static/img/content/fb.png')
+
+
+            +owl-slider({id:'design-slider'}).design__slider
+                +e.__slide.design__slide
+                    +e.IMG.img(src='static/img/content/head-slide1.jpg').design__slide-img
+
+                +e.__slide.design__slide
+                    +e.IMG.img(src='static/img/content/head-slide1.jpg').design__slide-img
+
+
+            
+

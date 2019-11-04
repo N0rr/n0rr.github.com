@@ -1,0 +1,30 @@
+.b-page {   
+    @include above($desktop) {
+        position: relative;
+
+        // height: 100%; swiper
+        // overflow: hidden; swiper
+    }
+
+    &__title {
+        font-family: $font-2;        
+        font-size: rem(45);
+        font-weight: normal;
+        color: $color-1;
+        text-align: center;
+        letter-spacing: rem(0);
+
+        @include above($tablet) {
+            text-align: left;
+        }        
+        
+    }
+
+    & .swiper-wrapper {
+        display: block;
+
+        @include above($desktop) {
+            // display: flex;     swiper       
+        }
+    }
+}

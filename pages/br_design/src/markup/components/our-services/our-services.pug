@@ -1,0 +1,104 @@
+include ../tabs/tabs
+include ../tabs/tab/tab
+include ../btn/btn
+
+
+mixin our-services(data)
+    +b.our-services()&attributes(attributes).flex
+        +e.H1.__title.b-page__title
+            | Наши услуги
+
+        +tabs({id: 'our-services-tabs'}).our-services__tabs
+            +tab({title:'Дизайн жилого помещения', href: 'tab1'}).our-services__tab
+            +tab({title:'Дизайн отельных комнат', href: 'tab2'}).our-services__tab
+            +tab({title:'Дизайн коммерческих объектов', href: 'tab3'}).our-services__tab
+            +tab({title:'Ремонт под ключ', href: 'tab4'}).our-services__tab
+            +tab({title:'Отделочные работы', href: 'tab5'}).our-services__tab
+            +tab({title:'Выезд дизайнера на дом', href: 'tab6'}).our-services__tab
+
+            +e.__block(id='tab1')
+                .our-services__img-block
+                    IMG.our-services__img(src='static/img/content/our-services.jpg')
+
+                +e.ttl-block.our-services__ttl-block
+                    H3.our-services__title
+                        | Дизайн коммерческий объектов
+                    .our-services__prj-number
+                        | 532
+                        span проекта
+                            
+                .our-services__text
+                    |Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+
+            +e.__block(id='tab2')
+                .our-services__img-block
+                    IMG.our-services__img(src='static/img/content/our-services.jpg')
+
+                +e.ttl-block.our-services__ttl-block
+                    H3.our-services__title
+                        | Дизайн коммерческий объектов
+                    .our-services__prj-number
+                        | 532
+                        span проекта
+
+                .our-services__text
+                    | с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова
+
+            +e.__block(id='tab3')
+                .our-services__img-block
+                    IMG.our-services__img(src='static/img/content/our-services.jpg')
+
+                +e.ttl-block.our-services__ttl-block
+                    H3.our-services__title
+                        | Дизайн коммерческий объектов
+                    .our-services__prj-number
+                        | 532
+                        span проекта
+                        
+                .our-services__text
+                    | с коммерческими объектами, студия изучает целевую аудиторию
+
+            +e.__block(id='tab4')
+                .our-services__img-block
+                    IMG.our-services__img(src='static/img/content/our-services.jpg')
+
+                +e.ttl-block.our-services__ttl-block
+                    H3.our-services__title
+                        | Дизайн коммерческий объектов
+                    .our-services__prj-number
+                        | 532
+                        span проекта
+                        
+                .our-services__text
+                    | с коммерческими объектами, студия изучает целевую аудиторию
+
+            +e.__block(id='tab5')
+                .our-services__img-block
+                    IMG.our-services__img(src='static/img/content/our-services.jpg')
+
+                +e.ttl-block.our-services__ttl-block
+                    H3.our-services__title
+                        | Дизайн коммерческий объектов
+                    .our-services__prj-number
+                        | 532
+                        span проекта
+                        
+                .our-services__text
+                    | с коммерческими объектами, студия изучает целевую аудиторию
+
+            +e.__block(id='tab6')
+                .our-services__img-block
+                    IMG.our-services__img(src='static/img/content/our-services.jpg')
+
+                +e.ttl-block.our-services__ttl-block
+                    H3.our-services__title
+                        | Дизайн коммерческий объектов
+                    .our-services__prj-number
+                        | 532
+                        span проекта
+                        
+                .our-services__text
+                    | с коммерческими объектами, студия изучает целевую аудиторию
+
+        +btn({theme: 'default'}).our-services__btn
+            | Консультация

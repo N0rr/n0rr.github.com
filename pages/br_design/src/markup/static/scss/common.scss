@@ -1,0 +1,51 @@
+// Common styles of the project
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-width: rem(320);
+    height: 100%;
+    color: $color-1;
+    font-family: $font-1;
+    background: #fdfaf3;
+    // font-size: 4vw;
+}
+
+.container {   
+    margin: 0 auto;
+    max-width: rem(1360);   
+    padding: 0 rem(16);    
+    width: 100%;
+    outline: none;
+
+    @include above($tablet) {
+        padding: 0 rem(36);
+    }
+
+    @include above($desktop) {
+        padding: 0 rem(95);
+    }
+}
+
+.flex {
+    display: flex;   
+    flex-direction: column; 
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.row-between {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    justify-content: center;
+}
+

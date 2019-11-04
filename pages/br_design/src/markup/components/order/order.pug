@@ -1,0 +1,23 @@
+include ../input/input
+include ../btn/btn
+
+
+mixin order(data)
+    +b.order()&attributes(attributes)
+        +e.FORM.__form(action="#" method="post")
+            +e.__title  
+                | 
+                span Мечтаете 
+                | об интерьере от BRUME?
+
+            +e.P.__text
+                | Оставьте контактные данные, менеджер свяжется с вами      в течении 15 минут, для уточнения всех деталей.
+
+            +input({theme: 'light', name: 'name', class: 'input-name-js', placeholder: 'Имя*'}).order__input-name
+            +input({theme: 'light', name: 'phone', class: 'input-phone-js', placeholder: 'Телефон*'}).order__input-phone
+            +input({theme: 'light', name: 'email', class: 'input-mail-js', placeholder: 'E-mail'}).order__input-mail
+
+            +btn({theme: 'orange', tag: 'input', type:'submit', value:"отправить"})
+            
+            +e.__btn-info   
+                | Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных
