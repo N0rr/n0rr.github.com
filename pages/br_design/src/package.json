@@ -16,7 +16,7 @@
     "core-js": "3.2.1"
   },
   "devDependencies": {
-    "eslint": "^3.12.1",
+    "eslint": "^4.18.2",
     "gulp": "^3.9.1",
     "husky": "^3.0.4",
     "picturefill": "3.0.3",
