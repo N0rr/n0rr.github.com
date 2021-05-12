@@ -33,7 +33,7 @@
     "postcss-sorting": "^2.0.1",
     "select2": "^4.0.8",
     "write-file-webpack-plugin": "^3.4.2",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "init": "node ./tars/user-tasks/helpers/init-project.js",
